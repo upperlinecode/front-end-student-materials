@@ -30,4 +30,4 @@ Great question. This course is broken down into a few different types of assignm
 
 
 
-+ Sample Student Projects
+## Sample Student Projects
