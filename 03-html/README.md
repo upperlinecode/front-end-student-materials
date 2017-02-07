@@ -13,6 +13,6 @@
 + Great Tags To Know and Use
 
 + Labs
-  + Personal Page
+  + [Hobby Page](https://github.com/upperlinecode/fe-hobby-page-lab)
   + Fix the Indentation
   + Spot the Errors

@@ -30,7 +30,3 @@ In Cloud9 (or the terminal), you'll see your command line at the bottom of the s
 + Tips, Tricks and Resources
 Codeacademy
 etc...
-
-+ Lab Links
-  + Refrigerator Organization Lab - move things around, delete roaches, create new folders, add in new notes.
-  + Extra: Bash Scripting...
