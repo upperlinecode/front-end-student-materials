@@ -12,7 +12,7 @@ The back-end developers, on the other hand, deal with the logic that happens beh
 ## What will we be covering?
 In this course, we'll be covering the fundamentals of front end web development. By the end of this course you'll have the skills and experience to build websites that are graphically appealing and also integrate some neat user interaction. Here's a brief breakdown of the units.
 
-+ **Setup:** We'll get all the right tools set up that we need to start building
++ **Setup:** We'll get all the right tools set up that we need to start building.
 + **Command Line:** Learn to use the most powerful tool on your computer and start working with you terminal like a real developer.
 + **HTML:** The skeleton of every website on the internet.
 + **CSS:** Make your websites look professional by applying custom formatting and layouts.
