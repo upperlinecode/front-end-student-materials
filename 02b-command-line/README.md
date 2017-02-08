@@ -2,7 +2,7 @@
 Part of becoming a developer means using to learn the tools that developers use. The first and potentially most important tool, is the command line.
 
 ## What is the Command Line?
-The command line is a way of controlling a computer without a mouse our a GUI (Graphical User Interface). Before Apple Computers started building machines with icons and folders you could click on, the only way to interact with your computer was through the command line.
+The command line is a way of controlling a computer without a mouse or a GUI (Graphical User Interface). Before Apple Computers started building machines with icons and folders you could click on, the only way to interact with your computer was through the command line.
 
 [BEFORE PICTURE] [AFTER PICTURE]
 
