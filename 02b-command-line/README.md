@@ -26,11 +26,27 @@ In Cloud9 (or the terminal), you'll see your command line at the bottom of the s
 ![print working directory](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/2+pwd.gif)
 
 + **`mkdir directory_name` - Make a Directory:** This command allows us to make a brand new directory, in your current location. Let's say you're in your "documents" directory, and type `mkdir photos`. This would create a photos directory *inside of the documents directory.*
+
+![mkdir](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/3+mkdir.gif)
+
 + **`cd directory_name` - Change Directory:** Following from the example above, if we want to move **in to** a directory, type `cd directory_name` where "directory_name" is the name of the folder that you're moving into. To move **out of** a directory (up one level), type `cd ..` the `..` means "one level up". To change back to your "home" directory, you can always type `cd ~`.
+
+![cd](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/4+cd+photos.gif)
+
 + **`touch file_name` - Make a new File:** The `touch` command allows you to make a new *file*. For example, if we wanted to create a new index page for our website in HTML, we'd type `touch index.html` Make sure to give each new file an extension (like .rb, .js, .html, .css) depending on the type of the file.
+
+![touch](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/5+touch+index.html.gif)
+
 + **`mv file_or_folder_name destination` - Move:** If you want to move a file or folder, use the `mv` command followed by the name of the file you want to move and then the destination. Make sure the destination is a directory that is visible to you from your current working directory. **Warning:** If you move a file to a directory that does not exist or is incorrectly pathed, then the file itself will have its name changed to the destination's name.
-+ **`rm -rf directory_name` - Remove a directory:** Use `rm -rf` and a directory's name to remove it and all of its contents. Careful with this one!
+
+![mv](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/6+mv+index+.gif)
+
 + **`rm file_name` - Remove a file:** Use `rm` to remove a file. Note: Files that are removed cannot be brought back!
+
++ **`rm -rf directory_name` - Remove a directory:** Use `rm -rf` and a directory's name to remove it and all of its contents. Careful with this one!
+
+![rm rf](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/7+rm+and+rm+-rf.gif)
+
 **You Do:** From your command line, navigate to your home directory (`cd ~`) and create a new development directory (`mkdir development`).
 
 + Tips, Tricks and Resources
