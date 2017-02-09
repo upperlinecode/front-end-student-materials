@@ -37,7 +37,7 @@ In Cloud9 (or the terminal), you'll see your command line at the bottom of the s
 
 ![touch](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/5+touch+index.html.gif)
 
-+ **`mv file_or_folder_name destination` - Move:** If you want to move a file or folder, use the `mv` command followed by the name of the file you want to move and then the destination. Make sure the destination is a directory that is visible to you from your current working directory. **Warning:** If you move a file to a directory that does not exist or is incorrectly pathed, then the file itself will have its name changed to the destination's name.
++ **`mv file_or_folder_name destination` - Move:** If you want to move a file or folder, use the `mv` command followed by the name of the file you want to move, and then the destination where you want to move it. Make sure the destination is a directory that is visible to you from your current working directory. **Warning:** If you move a file to a directory that does not exist or is incorrectly pathed, then the file itself will have its name changed to the destination's name.
 
 ![mv](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/6+mv+index+.gif)
 
