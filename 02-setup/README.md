@@ -13,4 +13,10 @@ The main tool you'll be using is called Cloud9 - it's an IDE (Integrated Develop
 + Create a new HTML5 Workspace
 Once you've signed up, you'll need to create a workspace (this is where you'll be working!). Click "Create a New Workspace" and then select the "HTML5" workspace. Give it a name like "yourname-front-end".
 
-[**ADD IN ANNOTATED IMAGE OF CLOUD9 IDE**]
+![create a workspace](https://s3.amazonaws.com/upperline/curriculum-assets/cloud9/workspace-create-1.png)
+
+![choose HTML5](https://s3.amazonaws.com/upperline/curriculum-assets/cloud9/workspace-type.png)
+
+### Overview of your Workspace
+
+![Cloud9 Overview](https://s3.amazonaws.com/upperline/curriculum-assets/cloud9/c9-overview.png)
