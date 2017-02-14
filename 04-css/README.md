@@ -13,6 +13,8 @@ If you want to follow along, navigate to a existing HTML page (like your passion
 ### Step 1: Create a CSS file
 The first thing we need to do is create a css file that our html page can get its styling from. In your terminal or navigator, create a new file called `style.css`.
 
+[ADD IN GIF]
+
 ### Step 2:Link to your CSS file from your HTML page
 We need to connect our `style.css` page to the HTML page. Inside the `<head>` tag of your html page, we're going to add a `<link>` tag to connect to our new stylesheet. Add the following element to your `<head>` section:
 
@@ -20,6 +22,8 @@ We need to connect our `style.css` page to the HTML page. Inside the `<head>` ta
 <link rel="stylesheet" href="style.css">
 ```
 (make sure that your html page and your css stylesheet are at the same folder level)
+
+[ADD IN GIF]
 
 ### Step 3: Select and Style elements, by element
 Try selecting an element and styling it! In your stylesheet type:
@@ -31,6 +35,7 @@ h1 {
 ```
 This will look for all h1 elements and style them with a font size of 25 pixels, and blue color. Open up your webpage to check it out!
 
+[ADD IN GIF]
 
 ## Good Starter Properties To Play With
   + color
