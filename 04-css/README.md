@@ -55,3 +55,5 @@ Color in CSS can be tackled a few different way:
 
 ## Resources
 + [Shay Howe's Awesome HTML and CSS Tutorial](http://learn.shayhowe.com/html-css/)
++ [The Magic of CSS](http://adamschwartz.co/magic-of-css/) (advanced)
++ [CSS Basics](http://www.cssbasics.com/)

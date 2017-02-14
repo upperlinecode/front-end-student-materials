@@ -16,7 +16,7 @@ In Cloud9 (or the terminal), you'll see your command line at the bottom of the s
 
 **Note:** "Directory" and "Folder" are the same thing.
 
-### Trying some Commands
+### Try some Commands
 + **`ls` - List:** Typing `ls` and then hitting enter will list all of the (visible) files and folders in a directory. To show hidden files, type `ls -a`.
 
 ![List Itemts](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/1+ls+.gif)
@@ -49,6 +49,6 @@ In Cloud9 (or the terminal), you'll see your command line at the bottom of the s
 
 **You Do:** From your command line, navigate to your home directory (`cd ~`) and create a new development directory (`mkdir development`).
 
-+ Tips, Tricks and Resources
-Codeacademy
-etc...
+## Tips, Tricks and Resources
++ [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
++ [CodeAcademy Command Line](https://www.codecademy.com/learn/learn-the-command-line)
