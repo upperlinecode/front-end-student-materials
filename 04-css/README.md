@@ -7,13 +7,13 @@ CSS (which stands for *cascading style sheets*) is ***the*** fundamental way of 
 ## CSS Syntax
 
 ## Follow Along
-If you want to follow along, navigate to your passion or hobby project in the terminal.
+If you want to follow along, navigate to a existing HTML page (like your passion or hobby project) in the terminal.
 
 ## Applying CSS styling to an HTML Page
-### Create a CSS file
+### Step 1: Create a CSS file
 The first thing we need to do is create a css file that our html page can get its styling from. In your terminal or navigator, create a new file called `style.css`.
 
-### Link to your CSS file from your HTML page
+### Step 2:Link to your CSS file from your HTML page
 We need to connect our `style.css` page to the HTML page. Inside the `<head>` tag of your html page, we're going to add a `<link>` tag to connect to our new stylesheet. Add the following element to your `<head>` section:
 
 ```HTML
@@ -21,7 +21,7 @@ We need to connect our `style.css` page to the HTML page. Inside the `<head>` ta
 ```
 (make sure that your html page and your css stylesheet are at the same folder level)
 
-### Select and Style elements, by element
+### Step 3: Select and Style elements, by element
 Try selecting an element and styling it! In your stylesheet type:
 ```css
 h1 {
