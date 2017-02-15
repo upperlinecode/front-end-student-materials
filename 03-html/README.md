@@ -118,7 +118,7 @@ Look at the examples below for terrible, ok and great indentation:
 + On Cloud9:
 Click on the "Preview" Button, and then select "Live Preview File"
 
-**[JASON TO CREATE GIF]**
+![preview live preview](https://s3.amazonaws.com/upperline/curriculum-assets/html/preview+live+preview+)
 
 + On your Mac/PC:
 In the command line, navigate the folder with your html page and type `open filename`, replacing "filename" with the name of your HTML page.
