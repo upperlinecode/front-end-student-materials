@@ -95,10 +95,13 @@ It's here, inside the body of the function, that you can call on other functions
 ## Calling on Functions
 
 Calling a function is giving your computer a command to do something.  Computer's follow
-the instructions you give them in the order you give them. Let's look at some of
-the instructions we've seen more in depth:
+the instructions you give them in the order you give them. Let's look more in depth at some of
+the instructions we've seen:
 
 ### `createCanvas`
+A well named function has a name that describes to other programmers like you exactly what it does.
+A function named `createCanvas` creates the canvas that the rest of our shapes will be drawn on.
+
 It seems like creating a canvas is something that we would want to happen once at
 the beginning of our project.  Given that information do you think we should call
 the `createCanvas` function inside `setup` or inside `draw`?
@@ -134,6 +137,7 @@ across and 1000 pixels tall.
 
 ### `ellipse`
 
+The `ellipse` function draws an ellipse shape on the canvas.  
 We've seen the `ellipse` function called with 4 arguments:
 
 ```Javascript
