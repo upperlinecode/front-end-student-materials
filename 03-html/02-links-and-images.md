@@ -40,10 +40,5 @@ Here are a few tags to look up and experiment with. We won't tell you much more 
 + <iframe>
 + <canvas>
 
-+ Labs
-  + Fix the broken links
-  + Harder linking within directories
-  + Images that are links to your favorite sites
-  + Unscramble Basic
-  + Unscramble Challenge
-  + Work on your personal page
+## Mini Challenge: Your Favorite Sites
+Create a new HTML page called `favorite_sites.html`. Within this page, add images to your ten top websites. Each of these images should live inside of an `<a>` tag so that when you click on it, it should link out to that website.

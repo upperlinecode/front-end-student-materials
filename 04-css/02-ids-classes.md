@@ -33,7 +33,27 @@ We reference an id by using a `#` and the id name:
 ## The Magical `<div>` element
 Open up the source file for any website and you'll see the `<div>` element scattered around all over the place. It's one of the most widely used tags on the web. But what is a div?
 
-**Divs are boxes or containers that hold
+**Divs are boxes or containers that hold HTML elements**
+
+Let's say we have the following HTML elements, and we want to give them all a single blue background color, and want all of the elements to be centered in the page.
+
+```html
+<img src="http://www.nobelprize.org/nobel_prizes/medicine/laureates/1962/watson.jpg">
+<h2>James Watson</h2>
+<p>Nobel Prize winner and co-discoverer of the double-helix structure of DNA</p>
+```
+
+We could work on individually styling each of these elements, but this gets old very fast. Instead, we can put all of these elements inside of a `<div>` and then apply styling to the div itself (Remember that the 'C' in CSS stands for **Cascading** - meaning that styling to a parent element will cascade down to its children)
+
+```html
+<div id="watson">
+  <img src="http://www.nobelprize.org/nobel_prizes/medicine/laureates/1962/watson.jpg">
+  <h2>James Watson</h2>
+  <p>Nobel Prize winner and co-discoverer of the double-helix structure of DNA</p>
+</div>
+```
+
+We can now
 
 
 

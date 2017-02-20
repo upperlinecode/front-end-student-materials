@@ -21,6 +21,7 @@ We need to connect our `style.css` page to the HTML page. Inside the `<head>` ta
 ```HTML
 <link rel="stylesheet" href="style.css">
 ```
+
 (make sure that your html page and your css stylesheet are at the same folder level)
 
 [ADD IN GIF]
