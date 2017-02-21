@@ -6,7 +6,7 @@ CSS (which stands for *cascading style sheets*) is ***the*** fundamental way of 
 
 ## CSS Syntax
 
-[ADD IN IMAGE OF SELECTOR, PROPERTY, VALUE]
+![Selector, Property, Value](https://s3.amazonaws.com/upperline/curriculum-assets/css/css-labels.png)
 
 ## Follow Along
 If you want to follow along, navigate to a existing HTML page (like your passion or hobby project) in the terminal.
