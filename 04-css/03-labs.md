@@ -1,7 +1,8 @@
 # Labs
-+ Ugliest Page
+
++ The Ugliest Page
 + Work on your Personal Page
 + Styling Challenge (using elements only)
-+ CSS Diner Challenge
++ Remix on Thimble
++ [CSS Diner Challenge](https://github.com/upperlinecode/fe-css-diner-menu)
 + [Sushi Selectors](https://flukeout.github.io/)
-+ Sushi Menu Lab
