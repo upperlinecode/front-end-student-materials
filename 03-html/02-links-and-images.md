@@ -35,10 +35,10 @@ Use the `<img>` tag (which doesn't need a closing tag) to add an image to your s
 ## Extra: Audio and Video
 Here are a few tags to look up and experiment with. We won't tell you much more since there is amazing documentation online, and part of learning to program is being able to sift through all of the resources available to you!
 
-+ <audio>
-+ <video>
-+ <iframe>
-+ <canvas>
++ `<audio>`
++ `<video>`
++ `<iframe>`
++ `<canvas>`
 
 ## Mini Challenge: Your Favorite Sites
 Create a new HTML page called `favorite_sites.html`. Within this page, add images to your ten top websites. Each of these images should live inside of an `<a>` tag so that when you click on it, it should link out to that website.
