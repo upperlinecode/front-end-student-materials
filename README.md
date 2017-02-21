@@ -1,9 +1,9 @@
 # Introduction to Front End Development
 ## Table of Contents
 
-1. [Welcome](01-welcome/README.md)
+1. [Welcome](01-welcome/01-welcome.md)
 
-2. [Setup](02-setup/README.md)
+2. [Setup](02-setup/01-setup.md)
 
 3. [Using the Command Line](02b-command-line/01-intro-to-command-line.md)
 
