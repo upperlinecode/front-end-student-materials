@@ -6,7 +6,9 @@ The command line is a way of controlling a computer without a mouse or a GUI (Gr
 
 **Before**
 ![Apple II](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/Apple_II.jpg)
-**After** ![Macbook](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/macbook.jpg)
+
+**After**
+![Macbook](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/macbook.jpg)
 
 As developers, we use the command line because it's a lot faster and more powerful that the GUI. No more clicking around like a noob!
 
