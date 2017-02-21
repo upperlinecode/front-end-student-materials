@@ -12,20 +12,20 @@ HTML is written in .html files. To create a new webpage, use your terminal or fi
 ## General Syntax
 + HTML elements are written using tags. Tags have an opening tag surrounded by angle brackets (e.g. `<tag>`) and a closing tag that has a slash after the first bracket (e.g. `</tag>`).
 
-```HTML
+```html
 <tag>
   Content
 </tag>
 ```
 For example, if we wanted to create a paragraph, we'd use the `<p>` opening and closing tags:
 
-```HTML
+```html
 <p>
   This is a paragraph about how great polar bears are. Aren't they just the best?
 </p>
 ```
 + Elements can be placed inside of other elements:
-```HTML
+```html
   <parent>
     <child>
       This content is inside of the child tag, which is inside of the parent tag. Keep an eye on indentation to see which is the parent and which is the child!
@@ -36,7 +36,7 @@ For example, if we wanted to create a paragraph, we'd use the `<p>` opening and 
 ## Structure of an HTML Page
 **Every** webpage has a basic layout that is the same. It looks like this:
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -55,7 +55,7 @@ For example, if we wanted to create a paragraph, we'd use the `<p>` opening and 
 ## Proper Indentation - HTML as a Tree Structure
 Indentation is **super important** to writing good HTML. I know it's a pain, but trust me, it's going to make you a way better developer. Remember how HTML is made up of tags inside of tags inside of tags? The indentation shows us which tags belong to each other, sort of like a family tree.
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
