@@ -5,9 +5,11 @@ Part of becoming a developer means using to learn the tools that developers use.
 The command line is a way of controlling a computer without a mouse or a GUI (Graphical User Interface). Before Apple Computers started building machines with icons and folders you could click on, the only way to interact with your computer was through the command line.
 
 **Before**
+
 ![Apple II](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/Apple_II.jpg)
 
 **After**
+
 ![Macbook](https://s3.amazonaws.com/upperline/curriculum-assets/command-line/macbook.jpg)
 
 As developers, we use the command line because it's a lot faster and more powerful that the GUI. No more clicking around like a noob!
