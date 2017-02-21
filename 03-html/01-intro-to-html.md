@@ -71,48 +71,37 @@ Indentation is **super important** to writing good HTML. I know it's a pain, but
 
 Look at the examples below for terrible, ok and great indentation:
 
-<table>
-  <tr>
-    <th> Gross :scream: </th>
-    <th> Still needs work--tags are not indented :confused: </th>
-    <th> Go work at google! :heart_eyes: </th>
-  </tr>
-  <tr>
-    <td>  &lt;!DOCTYPE html&gt; &lt;html&gt;&lt;head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; </td>
-    <td>  
-      &lt;!DOCTYPE html&gt;
+### Gross
 
-      <br>
-      &lt;html&gt;
+```html
+<!DOCTYPE html> <html><head></head><body><h1>Hello World</h1></body></html>
+```
 
-      <br>
-      &lt;head&gt;&lt;/head&gt;
+### OK: Still Needs Work Indenting
 
-      <br>  
-      &lt;body&gt;&lt;/body&gt;
+```html
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Hello World</h1>
+</body>
+</html>
+```
 
-      <br>
-      &lt;/html&gt;  
+### Go Work at Google!
 
-    </td>
-    <td>  
-      &lt;!DOCTYPE html&gt;
-      <br>
-      &lt;html&gt;
-      <br>
-      &#160;&#160;&#160;&#160;&#160;&lt;head&gt;
-      <br>
-      &#160;&#160;&#160;&#160;&#160;&lt;/head&gt;
-      <br>
-      &#160;&#160;&#160;&#160;&#160;&lt;body&gt;
-      <br>
-      &#160;&#160;&#160;&#160;&#160;&lt;/body&gt;
-      <br>
-      &lt;/html&gt;  
-    </td>
-  </tr>
-</table>
-
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+</html>
+```
 ## Viewing your Page
 
 + On Cloud9:
