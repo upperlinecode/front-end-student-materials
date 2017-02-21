@@ -27,7 +27,3 @@ Great question. This course is broken down into a few different types of assignm
 + **Labs:** Labs are short assignments (between 10 minutes and an hour) that help you solidify the knowledge you're getting from the readings and videos.
 + **Projects:** These are longer term projects that let you use the skills you've learned in a meaningful way to you. Projects are open ended - there's always more that you can do and add to - the sky is really the limit.
 + **Extra Resources:** We try to provide links to other sites if you want to learn more about a specific topic. If you have some free time, dive into these!
-
-
-
-## Sample Student Projects
