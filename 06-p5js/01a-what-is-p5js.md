@@ -20,8 +20,9 @@ To summarize, knowing **how to use** something:
 Can sometimes be very different from knowing all about **how it works** or
 how it is wired up behind the scenes:
 
-![blueprint](sink.png)
-( what's even going on here ¯\\\_(ツ)_/¯ )
+![blueprint](/resources/sink.png)
+
+*(what's even going on here ¯\\\_(ツ)_/¯)*
 
 In your future as a programmer you will be doing both of these things. Sometimes
 you will be defining the blueprints and inner-workings of how something will work.

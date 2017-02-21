@@ -1,4 +1,4 @@
-# `draw`, `setup`, and Shapes
+# Functions: `draw`, `setup`, and Shapes
 ![dolphin](https://media.giphy.com/media/Q6Jk8FeKkSLLi/giphy.gif)
 
 Every artist needs a canvas. Obviously.
@@ -22,85 +22,45 @@ Preview your `index.html` and check out what happens when you move your mouse!
 
 ![we're drawing!](http://g.recordit.co/D2aJ134ms1.gif)
 
-## Special Words
-
 All the words you see above such as `createCanvas`, `fill`, or `ellipse` are
 special words coming from, you guessed it, the p5.js library.  They need to be written
 exactly as shown above with exactly the same capitalization.
 
 Don't take my word for it, replace the word `createCanvas` with `createcanvas` or
-`fill` with `zebra`, what happens now when you preview your code.... nothing. If it ever happens
+`fill` with a random word like `zebra`, what happens now when you preview your code.... nothing. If it ever happens
 that you are writing some code and then you don't see what you expect or everything is broken
 ( \*\*SPOILER ALERT\*\* this will definitely happen, it's totally normal) check that you don't have any small typos
 or spelling mistakes.
 
-The technical term for these special words is **functions**.  Interestingly enough you also
-see the word `function` above before `setup()` and `draw()`.  So if `createCanvas` and `fill`
-are also functions why isn't the word `function` in front of them too?
+The technical term for these special words is **functions**.  
 
-You will learn much more about JavaScript functions later, but for know it's very important
-to understand the difference between *using* a function and *defining* a function.
+## What's a Function?
 
-When you see:
-```Javascript
-// Function Definition
-function setup() {
-  //.. some code
-}
-```
-That is the **definition of a function**
+A function is a command or instruction written in code. When we want to give a command or tell our computer to do something we **call** a function. The syntax for calling a function is to write the name of the function followed by a set of parentheses like so `myFunction()`. Sometimes you may write more inside of the parentheses, we'll cover that really soon.
 
-On the other hand, something like:
-```Javascript
-// Calling the ellipse Function
-ellipse(mouseX, mouseY, 40, 40);
-```
-is using the function `ellipse` that happens to be defined already somewhere else.
-The technical way to say "using" a function is to say **calling on a function**.  You
-might also hear the term **invoking** a function. They all mean the same thing.
+`ellipse`, for example, is a function another developer wrote that we can call on to say "hey computer, draw an ellipse".
 
-Code needs to be used or called on to actually get run by a computer.
+You probably noticed the word `function` in the code above before `setup` and `draw`.  These are special functions that p5.js needs us to define.  They are special because p5 will call on them for us *automatically*
 
-## Defining Functions: `setup` and `draw`
-p5.js is expecting that some functions are defined with very specific names.
-Functions in JavaScript must be  defined with the pattern you've see above,
+Think back to flip-books you may have made as a child.
 
-- first the word `function`
-- then the name of the function
-- next, an opening and closing parentheses `()`
-- an opening curly brace `{`
-- any code that should go inside the function
-- a closing curly brace `}`
+![flipbook](https://media.giphy.com/media/v7YBzmzsJmqGc/giphy.gif)
 
-All together it looks like:
+#### `setup`
+You can think of `setup` as a function that provides information like how big each page in your flip-book should be or how fast one should flip through. When a project has the p5.js library loaded into it, `setup` is *called one time when the page loads*
 
-```Javascript
-function nameOfYourFunction() {
-  any code you may need;
-}
-```
+#### `draw`
+`draw` also gets called automatically, though not just once. It gets called *repeatedly over and over again*.  You can think of `draw` as saying what should go on each individual page of your flip-book.  In our first code example, we tell `draw` to place an ellipse on the screen over and over again. It is the accumulation of all these ellipses one after the next that make it look like we are drawing a continuous pink line.
 
-For now there's no need to dive super deep into this. Just consider this
-pattern as part of the magic-spell needed to get JavaScript to run. Forgetting a `}`
-may seem like a minor mistake, but JavaScript needs everything to be in order to correctly
-understand the code you wrote.
+Inside of `setup` and `draw` is where we will write code and call on other functions to make things show up in the browser. "Inside" of a function means between the opening curly brace `{` and ending curly brace `}` you see after both functions.  It may seem like a minor thing, but if you don't put your code in the correct place inside of `setup` or `draw`, or accidentally delete a `}`, JavaScript won't know how to correctly interpret your code.  
 
-When a webpage that is linked to the p5 library loads, it will *automatically call* on a
-function called `setup` once.
+## Calling Functions & Arguments
 
-After that it will repeatedly call on a function called `draw`. Each time the `draw`
-function gets called it will follow the instructions given inside that function.
-It's here, inside the body of the function, that you can call on other functions.
-
-## Calling on Functions
-
-Calling a function is giving your computer a command to do something.  Computer's follow
-the instructions you give them in the order you give them. Let's look more in depth at some of
-the instructions we've seen:
+As we said, calling a function is giving your computer a command to do something.  Computer's follow the instructions you give them in the order you give them. Let's look more in depth at some of the instructions we've seen:
 
 ### `createCanvas`
 A well named function has a name that describes to other programmers like you exactly what it does.
-A function named `createCanvas` creates the canvas that the rest of our shapes will be drawn on.
+A function named `createCanvas`, not surprisingly, creates the canvas that the rest of our shapes will be drawn on.
 
 It seems like creating a canvas is something that we would want to happen once at
 the beginning of our project.  Given that information do you think we should call
@@ -134,6 +94,8 @@ The way we supply that information to our friendly computer is with arguments.
 In between the parentheses we tell it the width and the height in pixels. So,
 `createCanvas(250, 1000);` would create a narrow but tall canvas 250 pixels
 across and 1000 pixels tall.
+
+Programmers will say that they **give** or **pass** arguments to a function.
 
 ### `ellipse`
 
@@ -172,17 +134,66 @@ downward direction.
 
 ![coordinate plane](https://static1.squarespace.com/static/567458eda128e6372f9c1656/t/573cd44e4d088ee581102125/1463604324172/?format=2500w)
 
+### `rect`
+
+Ok, `rect` is a function we have never seen before. Nothing to fear here though, it works just like any other function. We call it and give it arguments.
+
+```Javascript
+rect(50, 50, 80, 80);
+```
+
+Try it, instead of a circle on the screen you'll see a square! `rect` works exactly like `ellipse` except it draws rectangular shapes!  The arguments even specify the same information:
+
+```Javascript
+rect(x coordinate, y coordinate, width of rectangle, height of rectangle);
+```
+
+Play around with `rect`.  One thing to keep in mind is that the 1st and 2nd arguments, the `x` and `y` coordinates, determine where the *top left corner* of the rectangle will be placed.
+
 ## How Do You Remember All This?
 ### Reading Documentation
-
 This seems like a ton of information.
 
 Who can remember if the order of the arguments to `createCanvas`
-is supposed to be `(width, height)` or was it `(height, width)`?
-
-There's a function `rect` that draws a rectangle that takes arguments very similar
-to `ellipse` but draws a rectangle instead of an ellipse.  Wait-- was the function
-called  `rect` or `rectangle`?
+is supposed to be `(width, height)` or was it `(height, width)`? Or let's say you want to draw a square. Ok great, you know what function to use...  wait-- was the function called  `rect` or `rectangle`?
 
 Luckily p5 has amazing **documentation** that can be found [here](https://p5js.org/reference/).
-Code documentation shows how functions are intended to be used.
+Code documentation shows and describes how functions are intended to be used. Let's look at the documentation for the `line()` function. If you open the link above you'll find it under the heading "Shapes" in the section called "2D Primitives". Otherwise [this link](https://p5js.org/reference/#/p5/line) will take you directly there
+
+### `line` Documentation In Detail
+![Example](/resources/lineExample.gif)
+
+#### Example
+The Example section is a fully interactive window that allows you to change the arguments and see the results in real time. Try it!
+
+#### Description
+The next section provides an english description and any additional information. For `line` it reads:
+>Draws a line (a direct path between two points) to the screen. The version of line() with four parameters draws the line in 2D. To color a line, use the stroke() function. A line cannot be filled, therefore the fill() function will not affect the color of a line. 2D lines are drawn with a width of one pixel by default, but this can be changed with the strokeWeight() function.
+
+#### Syntax and Parameters
+![syntax and params](/resources/syntaxandparams.png)
+
+In the Example section of the documentation we saw the `line` function being passed number vales: `line(30, 20, 85, 75);`.
+
+Where those numbers represent *actual data*, here in the Syntax and Parameters sections the documentation shows in a more general way how to use the function.  We can see that *whatever* number we give as the first argument will be the `x` value for the first point and so on...
+
+### Learning to Learn
+
+Programmers look up documentation all the time. Basically, programming is challenging, and programmers want to spend their time and energy focusing on the challenging parts.  So for things that are pure memorization like  the order of arguments and names of functions, you can let the documentation remember for you.
+
+Referring to the documentation doesn't mean you are doing something wrong or aren't getting the hang of things. In fact, other developers would be impressed because it proves you are already learning how to independently teach yourself!
+
+In a field where new technologies are always coming out and existing ones constantly change, that is an incredibly important skill.
+
+## Mini-Challenge
+1. Draw **5 shapes or lines** on the canvas using a minimum of **3 different functions**. Make it so that none of these 5 shapes touch each other and all fit entirely on the canvas
+
+2. Change your code so each shape touches or overlaps at least one other shape.
+
+3. Follow along with the documentation to do something you've never done before.
+  - Some ideas:
+  - Try a brand new function such as `quad` or `triangle`.
+  - Look at the documentation of `rect` to see how to make a rectangle with rounded edges
+
+## Resources
+- [p5.js Documentation](https://p5js.org/reference/)
