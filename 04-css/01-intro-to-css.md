@@ -58,3 +58,5 @@ Color in CSS can be tackled a few different way:
 + [Shay Howe's Awesome HTML and CSS Tutorial](http://learn.shayhowe.com/html-css/)
 + [The Magic of CSS](http://adamschwartz.co/magic-of-css/) (advanced)
 + [CSS Basics](http://www.cssbasics.com/)
++ [CodeAcademy's CSS Lessons](https://www.codecademy.com/courses/css-coding-with-style/0/1)
++ [Fun and Games with CSS](http://rupl.github.io/fun-games-css/) - A fun demo of the power of CSS3.

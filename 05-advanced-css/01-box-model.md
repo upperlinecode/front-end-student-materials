@@ -11,6 +11,7 @@
 + Types of Layout (display: float, block, inline etc)
 
 + Resources
++ [Learn Layout](http://learnlayout.com/)
 
 + Labs
   + Celebrity Photo Wall

@@ -3,7 +3,7 @@
 So far, we've only been able to select elements (like `<h1>` and `<p>`) in css. While this is useful, sometimes we need to be more specific. What if I want to select only one `<p>` element, or style a few (but not all) of the images on my page in a specific way. We use classes and ids to make this happen.
 
 ## What are Classes and IDs?
-Classes and Ids are a type of attribute that we can add onto an element in order to be more specific with our CSS selectors. This is what they look like:
+Classes and ids are types of attributes that we can add onto an element in order to be more specific with our CSS selectors. This is what they look like:
 
 ```html
 <p class="animal-description">
@@ -46,17 +46,23 @@ Let's say we have the following HTML elements, and we want to give them all a si
 We could work on individually styling each of these elements, but this gets old very fast. Instead, we can put all of these elements inside of a `<div>` and then apply styling to the div itself (Remember that the 'C' in CSS stands for **Cascading** - meaning that styling to a parent element will cascade down to its children)
 
 ```html
-<div id="watson">
+<div class="scientist">
   <img src="http://www.nobelprize.org/nobel_prizes/medicine/laureates/1962/watson.jpg">
   <h2>James Watson</h2>
   <p>Nobel Prize winner and co-discoverer of the double-helix structure of DNA</p>
 </div>
 ```
 
-We can now
+We can now style this div by referencing the id or class that we've given it (in this case it's a class):
 
+```css
+.scientist {
+  text-align: center;
+  background-color: lightblue;
+}
+```
 
+You should use `<div>` elements whenever you want to create a "group" of elements that receive the same styling and layout (more on layout later).
 
-+ Labs
-  + [Sushi Selectors](https://flukeout.github.io/)
-  + Sushi Menu Lab
+## Resources
++ [Divs Explained on Stack Overflow](http://stackoverflow.com/questions/14027243/explain-what-a-div-tag-is-to-a-non-programmer)
