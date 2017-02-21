@@ -55,7 +55,7 @@ To prove that these variables exist, we'll use the `print` function. If you open
 
 ![print width](/resources/print-width.gif)
 
-As shown here, we see the *value* of the variable `width`, `800` logged to the console. In fact, it's logged many, many times in a row because `draw` is called repeatedly over and over. Each time it prints the value of the variable `width`.
+As shown here, we see the *value* of the variable `width`, `800` logged to the console. In fact, it's logged many, many times in a row because `draw` is called repeatedly over and over. Each time it prints the value of the variable `width`. That's what the gray and white increasing number in the console indicates, the same number is being printed multiple times.
 
 When we try to print a variable name that doesn't exist like `zebra`, we see a red JavaScript error that tells us `zebra` does not exist, it's not defined the way `width` and `height` are.
 
