@@ -22,3 +22,5 @@ A Repository is just a directory with a collection of files and folders that are
 6. `cd` into the directory that you just downloaded.
 
 ## More Resources
+
++ [Introduction to Github](https://services.github.com/on-demand/intro-to-github/)
