@@ -144,3 +144,4 @@ Experiment with the following tags by adding them inside the body of your html d
 + [Mozilla Thimble](https://thimble.mozilla.org/en-US/?ref=webmaker.org) - Great for playing with other peoples' projects.
 + [Mozilla X-Ray Goggles](https://goggles.mozilla.org/) - Super cool tool for changing existing websites.
 + [HTML Dog](http://www.htmldog.com/guides/html/beginner/) - Solid tutorial
++ [HTML Examples](http://www.htmlandcssbook.com/code-samples/) - Use 'Inspect Element' to look at the code behind these examples.
