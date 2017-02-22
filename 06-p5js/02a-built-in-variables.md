@@ -12,7 +12,7 @@ She asks that in a 200 x 200 canvas you draw a 50 x 50 pixel square in the exact
 - For the launch pad you'll use the `rect` function. To call `rect` you need to know where the *top left corner* of the square should be.  The top left corner will be half the width of the square over to the right and half the length of the square up from the exact middle point.
 - All the lines should start with one point at the center of the canvas.
 - The top line should end at the midpoint for `x` and `y` will be `0`.
-- The bottom left line will end at `0` for `x` with the 'y' value being the maximum height of the whole canvas.
+- The bottom left line will end at `0` for `x` with the `y` value being the maximum height of the whole canvas.
 - The bottom right line will end with both `x` and `y` values being the maximum width and height of the canvas.
 
 You quickly translate that to code:
@@ -45,9 +45,9 @@ What is annoying about this problem is that nothing about *the logic of your pro
 As programmers we don't like to redo work.  Let's see if there's a way around this.
 
 ## `width` and `height`
-By now you are familiar with a few of the functions provided by the p5 library.  You also have access to several built-in **variables**.  A variable is a word you write in your code that holds on to a value or represents a value.  "Value" means some actual data. The type of data we've seen so far have been numbers. The number `0`, `100`, `255`, etc. are all different values
+By now you are familiar with a few of the functions provided by the p5 library.  You also have access to several built-in **variables**.  A variable is a word you write in your code that represents some other value.  "Value" means some actual data. So far the data we've seen has been different numbers. The numbers `0`, `100`, `255`, etc. are all different values.
 
-In our case we will be able to write the word `height` and it will be *as if* we were writing the number `600` or `200` or **whatever the height of the canvas is** from p5.js. Variables are dynamic, they can hold any different values.
+In our case we will be able to write the word `height` and it will be *as if* we were writing the number `600` or `200` or **whatever the height of the canvas is** from p5.js. Variables are dynamic, they can hold any different value.
 
 Another way to think of a variable is like a bucket or container with a label on it. Inside of the bucket can be any value.  You use a variable by writing the name of the label on the outside of the bucket, but when you write the name you get the value that's inside.
 
@@ -55,7 +55,7 @@ To prove that these variables exist, we'll use the `print` function. If you open
 
 ![print width](/resources/print-width.gif)
 
-As shown here, we see the *value* of the variable `width`, `800` logged to the console. In fact, it's logged many, many times in a row because `draw` is called repeatedly over and over. Each time it prints the value of the variable `width`. That's what the gray and white increasing number in the console indicates, the same number is being printed multiple times.
+As shown here, we see the *value* of the variable `width`, `800` logged to the console. In fact, it's logged many, many times in a row because `draw` is called repeatedly over and over. Each time it prints the value of the variable `width`. That's what the gray and white increasing number in the console indicates, the same output is being printed multiple times.
 
 When we try to print a variable name that doesn't exist like `zebra`, we see a red JavaScript error that tells us `zebra` does not exist, it's not defined the way `width` and `height` are.
 
@@ -100,3 +100,8 @@ function draw() {
 ![radar](/resources/radar.gif)
 
 Pretty cool!  `mouseX` and `mouseY` open up a lot of interesting possibilities.
+
+## Mini-Challenge
+
+1. Use `width` and `height` to divide the a canvas into 4 different color squares.
+2. Use `mouseX`, `mouseY` and the `ellipse` function to make a program that can draw a line as you move your mouse. Write your name in cursive. 
