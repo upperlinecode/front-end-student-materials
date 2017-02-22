@@ -151,7 +151,7 @@ Notice that line:
 age = age + 1;
 ```
 
-That's another thing about variables that doesn't make sense from math class.  Of course `y` would never be equal to `y + 1`. The difference is, here, the equals sign is about *assignment*. We are actually saying just what we intended to say. The new value of `age`, notice we never wrote `var` again since the variable was already declared, should be assigned to whatever the current value is + 1.
+That's another thing about variables that doesn't make sense from math class.  Of course `y` would never be equal to `y + 1`. The difference is, here, the equals sign is about *assignment*. We are actually saying that the new value of `age` should be assigned to whatever the current value is + 1, which is just what we wanted to say. Note that *we never used the word `var`*, the variable was already declared and only had to be re-assigned a new value.
 
 This is a really common thing in programming, increasing, or *incrementing*, a variable. It's so common there's even a shortcut for it.
 Writing `age += 1` is *exactly the same* as `age = age + 1`.
