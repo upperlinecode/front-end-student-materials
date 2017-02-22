@@ -36,9 +36,12 @@ h1 {
   font-size: 25px;
 }
 ```
-This will look for all h1 elements and style them with a font size of 25 pixels, and blue color. Open up your webpage to check it out!
+This will look for all h1 elements and style them with a font size of 25 pixels, and blue color. Open up your webpage to check it out! Remember to save your style.css page or any changes to your HTML page before viewing the webpage. 
 
-[ADD IN GIF]
+
+
+
+![view-css-styling](https://s3.amazonaws.com/upperline/curriculum-assets/css/view-css-styling.gif)
 
 ## Good Starter Properties To Play With
   + color
