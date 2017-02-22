@@ -38,7 +38,7 @@ it's fill should be black".
 ```
 We have not really seen anything like that before. So far our code has only been read from top to bottom.  The first line gets read, then the second, then the third, and so on.  Here, on the other hand, we need to say "sometimes read line 4 and other times read line 6", depending on if some condition is met. A *condition* is something that is clearly either *true* or *false*, the center of the ball is in the bottom half of the canvas or it's in the top.
 
-## `if` statements
+## `if` Statements and Booleans
 
 The additional tool we'll be adding to our toolbox is an `if` statement. For the ball example the code would look like:
 
@@ -48,13 +48,15 @@ if ( the-ball-is-in-the-black-area ) {
 }
 ```
 
-**Only if** the code inside the parentheses *evaluates* to `true`, will the line `fill(255);` ever be read by the computer. If the expression inside the `()` after the `if` is false, it will never be run.  To demonstrate that really quick, let's use the special words `true` and `false` in JavaScript. After that we'll discuss what it means for code to *evaluate* to `true` or `false`.
+Only if the code inside the parentheses *evaluates* to `true`, will the line `fill(255);` ever be read by the computer. If the expression inside the `()` and after the `if` is false, it will never be run.  To demonstrate that really quick, let's use the special words `true` and `false` in JavaScript. These are what are called **Boolean values**.
+
+That's a weird word, it comes from someone's name, George Boole. He studied logic concerning two values, true or false, on or off, 0 or 1.  That kind of thinking is fundamental to how computer's work.  After we study some basic Boolean logic using the Boolean values `true` and `false`, we'll discuss what it means for code to *evaluate* to `true` or `false`.
 
 ![your first if](/resources/first-if.gif)
 
 This some brand new functionality for us, pretty cool! The line that set the ball's fill to green *only was run by the computer when the condition was `true`*. Otherwise, the line was literally ignored. The code didn't do anything different.
 
-### Conditional Operators
+### Comparison Operators
 
 We can do more than just write in `true` or `false`.  We can ask questions and have them result in a value that's `true` or `false`. Examples of the type of questions we ask are
 - is this variable greater than some value?
@@ -62,7 +64,7 @@ We can do more than just write in `true` or `false`.  We can ask questions and h
 - is this variable equal to some other value?
 - is this variable NOT equal to some other value?
 
-The tool's we use to do this are called *conditional operators*, and they're not as complicated as that may sound. You've seen very similar things before from math class. They look like:
+The tool's we use to do this are called *comparison operators*, and they're not as complicated as that may sound. You've seen very similar things before from math class. They look like:
 - `>` greater than
 - `<` less than
 - `>=` greater than OR equal to
@@ -120,28 +122,9 @@ if (y > height/2) {
 ```
 It's cool to see how putting the problem into words translates really well into code.
 
-## Bouncing
+We can cover getting the ball to bounce in the next reading.
 
-When the ball's at the bottom of the canvas, we need our code to give the instructions:
-```
-if the ball's coordinate is greater than the canvas height,
-
-it's y speed should now get smaller each time draw is called
-```
-When it's at the top:
-```
-if the ball's coordinates are less than 0 (the top of the canvas),
-
-it's y speed should now increase so it can get head back downward
-```
-
-We could totally do this with two `if` statements, but we can also use an `else if`.
-
-```javascript
-if (y > height) {
-  y -= 2;
-} else if (y < 0) {
-  y += 2
-}
-```
-Conditional statements should always start with an `if`, then you can have as many `else if`s as you desire, then an `else` should always come at the end. Your code will be read from top to bottom until one conditional is `true`. Then it will leave that conditional group
+## Resources
+- [George Boole](http://www.telegraph.co.uk/technology/google/google-doodle/11968997/george-boole-google-doodle.html)
+- [JavaScript if/else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [JavaScript Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
