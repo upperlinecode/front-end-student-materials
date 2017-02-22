@@ -15,7 +15,7 @@ If you want to follow along, navigate to a existing HTML page (like your passion
 ### Step 1: Create a CSS file
 The first thing we need to do is create a css file that our html page can get its styling from. In your terminal or navigator, create a new file called `style.css`.
 
-[ADD IN GIF]
+![touch-style-css](https://s3.amazonaws.com/upperline/curriculum-assets/css/touch-style-css.gif)
 
 ### Step 2:Link to your CSS file from your HTML page
 We need to connect our `style.css` page to the HTML page. Inside the `<head>` tag of your html page, we're going to add a `<link>` tag to connect to our new stylesheet. Add the following element to your `<head>` section:
