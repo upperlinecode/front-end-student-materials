@@ -4,7 +4,8 @@ In this section, we're going to learn how to use attributes inside of our HTML e
 
 ![html attributes syntax](https://s3.amazonaws.com/upperline/curriculum-assets/html/attribute-syntax.png)
 
-##  Linking with <a> Tags
+##  Linking with <a> Tags </a>
+
 To create a link to another website or page in your project, use the anchor `<a>` tag. Surround whatever content you want to link with an opening and closing `<a>` tag. The `<a>` tag includes the attribute `href`, which points to the address that the link will send users to. For example:
 
 ```html
