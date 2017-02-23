@@ -106,12 +106,14 @@ function draw() {
 }
 ```
 
-**Hint: when the click event happens, what variable needs to change?**
+**Hint:** *when the click event happens, what variable needs to change?*
 
 ### `keyPressed()`
 
 - Alright, now try to do the same thing, but instead of when the mouse is clicked, have the event that triggers the rocket launch be that *any key is pressed*. [Here is the documentation](https://p5js.org/reference/#/p5/keyPressed) for `keyPressed()`
 
+**For these next challenges you may need to cover some of the material in the next section on Conditionals** You can always give it a shot now and come back later!
+
 - Next, try to get the rocket to launch only when *the space bar* is pressed. You'll have to use the `keyCode` variable as well as [this table of ASCII character values](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes).  To your computer, different characters are stored as different number values. For example `'a'` is `65` and `'b'` is `66`. Find the value of the `' '`space character.
 
-- As an extra challenge, can you use the left and right arrows to control the direction of the rocket as it launches? Be sure to read the documentation.
+- As an extra challenge, can you use the left and right arrows to control the direction of the rocket as it launches? First get the rocket to respond to you pressing the arrow keys. Then think about how you would make sure the rocket only moves left or right after it's launched. Could you perhaps make an extra variable `launched` that started out as `false`, an event toggles it to `true`, and only when it's `true` should your rocket move left or right...
