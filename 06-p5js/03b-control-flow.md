@@ -91,7 +91,7 @@ function draw() {
 }
 ```
 
-![first bounce](/resources/first-bounce.gif);
+![first bounce](/resources/first-bounce.gif)
 
 Amazing! The first bounce. It makes sense that it only bounces on the bottom since we only provided that logic.  
 
