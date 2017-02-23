@@ -26,7 +26,7 @@ We need to connect our `style.css` page to the HTML page. Inside the `<head>` ta
 
 (make sure that your html page and your css stylesheet are at the same folder level)
 
-[ADD IN GIF]
+![link-style-css](https://s3.amazonaws.com/upperline/curriculum-assets/css/link-style-css.gif)
 
 ### Step 3: Select and Style elements, by element
 Try selecting an element and styling it! In your stylesheet type:
