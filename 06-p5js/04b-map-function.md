@@ -25,13 +25,13 @@ Map takes 5 arguments.
 map(__, __, __, __, __);
 ```
 
-The 2nd and 3rd arguments are the *minimum* and *maximum* of the first range. In our case, `0` and `600`.
+The 2nd and 3rd arguments are the *starting point* and *ending point* of the first range. In our case, `0` and `600`.
 
 ```javascript
 map(__, 0, 600, __, __);
 ```
 
-The 4th and 5th arguments are the *minimum* and *maximum* of the second range. So, `0` and `255`.
+The 4th and 5th arguments are the *start* and *end* values of the second range. So, `0` and `255`.
 
 ```javascript
 map(__, 0, 600, 0, 255);
@@ -78,7 +78,7 @@ But that doesn't quite work.
 
 ![purple fade](/resources/purple-fade.gif)
 
-Think about our blue color range for a second.  The closer the mouse is to `0` in the x-axis the closer our blue value should be to `255`.  So we actually need to flip the *minimum* and *maximum* values for our range.
+Think about our blue color range for a second.  The closer the mouse is to `0` in the x-axis the closer our blue value should be to `255`.  So we actually need to flip the *starting* and *ending* values for our range.
 
 Paste in this code for the variable `blue`
 
