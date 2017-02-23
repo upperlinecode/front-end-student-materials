@@ -75,7 +75,7 @@ function draw() {
 
 ### Upping the stakes.
 
-Event this race is a little bit boring. Whichever circle begins with the top speed will surely always win.  What if at a random point in the middle of the race the racers changed their speed. Either making a strong push to the finish line or growing tired toward the end.
+Even this race is a little bit boring. Whichever circle begins with the top speed will surely always win.  What if at a random point in the middle of the race the racers changed their speed. Either making a strong push to the finish line or growing tired toward the end.
 
 ![finish line](https://media.giphy.com/media/rIPeAYjSXJIFq/giphy.gif)
 

@@ -36,14 +36,14 @@ it's fill should be white,
 otherwise,
 it's fill should be black".  
 ```
-We have not really seen anything like that before. So far our code has only been read from top to bottom.  The first line gets read, then the second, then the third, and so on.  Here, on the other hand, we need to say "sometimes read line 4 and other times read line 6", depending on if some condition is met. A *condition* is something that is clearly either *true* or *false*, the center of the ball is in the bottom half of the canvas or it's in the top.
+We have not really seen anything like that before. So far our code has only been read from top to bottom.  The first line gets read, then the second, then the third, and so on.  Here, on the other hand, we need to say "sometimes read line 4 and other times read line 6", depending on if some condition is met. A *condition* is something that is clearly either *true* or *false*, such as, the center of the ball is in the bottom half of the canvas or it's in the top.
 
 ## `if` Statements and Booleans
 
 The additional tool we'll be adding to our toolbox is an `if` statement. For the ball example the code would look like:
 
 ```javascript
-if ( the-ball-is-in-the-black-area ) {
+if ( the ball is in the black area ) {
   fill(255);
 }
 ```
@@ -77,7 +77,7 @@ The tool's we use to do this are called *comparison operators*, and they're not 
 And that's them in action!
 
 🔔🔑💡 Tip 💡🔑🔔
-> One operator that may be a little tricky to get the hang of is the `==`. Remember that a single `=` isn't asking the question "Are these things the same?", it's actually used for *variable assignment*.  Since `=` is already used to mean one thing, we have to use the double equals `==` when we want to get back a `true` or `false` answer to our question.  It's easy to forget the double `==`, if you ever see a single `=` inside of a conditional, it'a probably a mistake.
+> One operator that may be a little tricky to get the hang of is the `==`. Remember that a single `=` isn't asking the question "Are these things the same?", it's actually used for *variable assignment*.  Since `=` is already used to mean one thing, we have to use the double equals `==` when we want to get back a `true` or `false` answer to our question.  It's easy to forget the double `==`. If you ever see a single `=` inside of a conditional, it'a probably a mistake.
 
 ### Back to the Bouncing Ball.
 
@@ -90,7 +90,7 @@ if ( the-ball-is-in-the-black-area ) {
 ```
 A slightly more technical conditional to determine if the ball is in the bottom half of the canvas would be:
 
- `if the ball's y coordinate is ** greater than ** the half the canvas height`
+ `if the ball's y coordinate is *greater than* the half the canvas height`
 
  In code that's:
 
@@ -102,7 +102,7 @@ A slightly more technical conditional to determine if the ball is in the bottom 
 
 ![black to white](/resources/black-to-white.gif)
 
-Woop! Sort of.. before we get to the next conditional needed to make the ball bounce off the edge and reverse direction let's look back at the way we said:
+Yay! Sort of.. before we get to the next conditional needed to make the ball bounce off the edge and reverse direction let's look back at the way we said:
 
 ```
 "when the ball is in the black area,

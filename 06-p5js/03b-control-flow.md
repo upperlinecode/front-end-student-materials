@@ -33,7 +33,7 @@ function draw() {
 }
 ```
 
-This results in a ball that changes color, but doesn't bounce of the edge of the canvas. Instead, it just continues off of it.
+This results in a ball that changes color, but doesn't bounce back when it hits the edge of the canvas. Instead, it just continues off of it.
 
 Try to put the logic into words for bouncing off the bottom edge and reversing direction.
 
@@ -65,7 +65,16 @@ Look at what that does:
 
 Can you figure out why the ball gets stuck?  Try to think like your computer, start at the top and read down.
 
-When the ball makes it the bottom of the canvas the conditional is `true` and `y` decreases by `2`. That's the end of the function, so the next thing that happens is `draw` gets called again. The code gets read, it sees the line `y += 2` and `y` gets incremented. This makes `y > height` be `true` again, so `y` is then decremented by `2`, then `draw` is called again. The value continues to have `2` added and then subtracted, meaning no change in it's `y` coordinate, until it is off the canvas.
+When the ball makes it the bottom of the canvas:
+
+- The conditional is `true` and `y` decreases by `2`.
+- That's the end of the function, so the next thing that happens is `draw` gets called again.
+- All the code gets read, it comes to the line `y += 2` and `y` gets incremented.
+- This makes `y > height` be `true` again when it reaches the conditional.
+- So `y` is then decremented by `2`.
+- Then `draw` is called again.
+
+The value continues to have `2` added and then subtracted, meaning no change in it's `y` coordinate, until it is off the canvas.
 
 Clearly not what we want.
 
@@ -93,7 +102,7 @@ function draw() {
 
 ![first bounce](/resources/first-bounce.gif)
 
-Amazing! The first bounce. It makes sense that it only bounces on the bottom since we only provided that logic.  
+Amazing! The first bounce. It makes sense that it only bounces on the bottom since we never wrote the logic for bouncing off the top.  
 
 One important thing to point out, notice that our new conditional comes *before* the line where we increment `y`.  The incrementing is done *outside* of any conditional, it happens every single time `draw` is called.  Therefore when we increment we must *already* have flipped the number to negative. That's why it has to come first.
 
@@ -172,7 +181,7 @@ A small change, you may think, but now `x` could be any positive number, `12`, `
 
 There is no way for the lines `print(5);` or `print(10);` to get read. The first `if` catches all positive numbers.
 
-See why the order of your `else if`s is important.
+See why the order of your `else if`s is important?
 
 If you want a *default case*, some code that should be run only if *none of the if's are true*. You can put an `else` at the bottom to catch any input that doesn't match.
 
@@ -188,7 +197,7 @@ if (y > height) {
 }
 ```
 
-Notice that the value of `ySpeed` remains the same (it's always the number `2`) only the sign flips or toggles back and forth.  Can't we toggle the sign of a number by multiplying by `-1` ?
+Notice that the value of `ySpeed` remains the same (it's always the number `2`) only the sign (`+` or `-`) flips or toggles back and forth.  Can't we toggle the sign of a number by multiplying by `-1` ?
 
 I want code that looks like this:
 
@@ -200,7 +209,9 @@ if (the ball is past the bottom OR past the top) {
 y += ySpeed;
 ```
 
-See that capitalized 'OR', we can write that in code with two pipe symbols `||`. This key is generally above the enter button on your keyboard.  'OR' is called a **Logical Operator**,
+See that capitalized 'OR', we can write that in code with two pipe symbols `||`. This key is generally above the enter button on your keyboard.  
+
+'OR' is called a **Logical Operator**,
 another Logical Operator is 'AND', we write that in code with two ampersands like so `&&`. ('ampersand' if the name of the '&' symbol, if you didn't know).  
 
 The finished refactored code looks like:
