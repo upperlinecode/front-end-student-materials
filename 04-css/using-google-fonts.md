@@ -8,7 +8,7 @@ Navigate to [Google Fonts](https://fonts.google.com/) and browse around until yo
 
 When you've found the font you like, click on the + button to add it to your 'font cart'.
 
-[GIF HERE]
+![google-fonts](https://s3.amazonaws.com/upperline/curriculum-assets/css/google-fonts.gif)
 
 ## Step 2: Import your Font
 

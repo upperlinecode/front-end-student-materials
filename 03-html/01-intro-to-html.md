@@ -3,7 +3,7 @@
 ## What is HTML?
 
 HTML, or *Hypertext Markup Language* is the language of the web--every time you load a web page you are loading a long page of HTML code, and being able to write and understand HTML is the very first step in becoming a real developer.
-Not only that, but HTML is here to stay. You've probably head about a lot of computer languages, but HTML has been **the** language of the web for the last ~25 years, and it's not going anywhere.
+Not only that, but HTML is here to stay. You've probably heard about a lot of computer languages, but HTML has been **the** language of the web for the last ~25 years, and it's not going anywhere.
 Think of HTML as the skeleton of a webpage - it provides the **content** while javascript and css provide the *styling*.
 
 ## Getting Started  
@@ -25,6 +25,7 @@ For example, if we wanted to create a paragraph, we'd use the `<p>` opening and 
 </p>
 ```
 + Elements can be placed inside of other elements:
+
 ```html
   <parent>
     <child>

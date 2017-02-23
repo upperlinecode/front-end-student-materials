@@ -36,9 +36,13 @@ h1 {
   font-size: 25px;
 }
 ```
-This will look for all h1 elements and style them with a font size of 25 pixels, and blue color. Open up your webpage to check it out!
+This will look for all h1 elements and style them with a font size of 25 pixels, and blue color. Open up your webpage to check it out! Remember to save your style.css page or any changes to your HTML page before viewing the webpage. 
+
 
 ![h1-styling](https://s3.amazonaws.com/upperline/curriculum-assets/css/h1-styling.gif)
+
+
+![view-css-styling](https://s3.amazonaws.com/upperline/curriculum-assets/css/view-css-styling.gif)
 
 ## Good Starter Properties To Play With
   + color
@@ -48,12 +52,12 @@ This will look for all h1 elements and style them with a font size of 25 pixels,
   + text-align
   + border-color
 
-  This is just a little tiny list to start playing with. Look for more in the resources or by Googling "CSS Properties list"
+  This is just a tiny little list to start playing with. Look for more in Resources or by Googling "CSS Properties list".
 
 ## A Note About Color
-Color in CSS can be tackled a few different way:
+Color in CSS can be tackled a few different ways:
 + Using key words: There are 140 differnt color names which your web brower can make sense of--basically every crayon color you could want from "cornslik" to "rebeccapurple." You can find a [complete list of colors here](http://www.w3schools.com/colors/colors_names.asp).
-+ Using Hex Codes: `#4286f4`, `#336034`, etc. You can find hex codes by using this cool [color picker tool](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool)
++ Using Hex Codes: `#4286f4`, `#336034`, etc. You can find hex codes by using this cool [color picker tool](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool).
 + Using RGB: `rgb(255,0,0)`, `rgb(120,200,0)`, etc. RGB Stands for red, green blue. You can also use the [color picker tool](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) to get rgb values (each value has to be between 0 and 255).
 
 ## Resources
