@@ -166,11 +166,18 @@ for ( var count = 0; count < 3; count += 1 ) {
 
 This may seem like a lot, but you will definitely get the hang of it!
 
+Remember,
+
+```
+for ( where to start; when to stop; how to count ) {
+  ...
+}
+```
 
 
 #### 🔔🔑💡 Tip(s) 💡🔑🔔
 **Common Practices**
-> Remember how `count += 1` is a shortcut for `count = count + 1` because incrementing is such a common thing to do.  Well, incrementing **by 1** is a very, very common way to increment, so there's even a shortcut for that!
+> Recall how `count += 1` is a shortcut for `count = count + 1` because incrementing is such a common thing to do.  Well, incrementing **by 1** is a very, very common way to increment, so there's even a shortcut for that!
 
 >Writing: `count++`
 
