@@ -162,6 +162,13 @@ function draw() {
 ## Mini-Challenge
 
 1. Use the `random` function to make each racer a random color.  You can randomize one of RGB values, or all three!
+2. Use the `random` function to make at least one bubble (an ellipse) that randomly shakes across the screen.
+
+ ![bubbles](/resources/bubbles.gif)
+
+ Hint: You want `random` to be called every frame with a new random value, make sure you call it *inside of the `draw` function*. This will ensure that a new random value is picked each time.
+
+ Hint: The idea is that the bubble may sometimes move a small number of pixels to the left, sometimes to the right, sometimes up, sometimes down. The range given to `random` to randomly choose a number between can't start at 0.
 
 ## Resources
 

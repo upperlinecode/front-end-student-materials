@@ -200,4 +200,4 @@ function draw() {
 ## Mini-Challenge
 
 1. You probably noticed all 4 racers move at the same speed. Take the code above and modify it so the different circles move at different speeds. Replace the variable `speed` with at least 3 different speed variables such as `winningSpeed`, `averageSpeed`, `losingSpeed`.  To make the different racers move differently you'll need multiple variables for their `x` locations instead of one variable `startX`. As a suggestion you could use `racer1X`, `racer2X`, etc.  All of those variables will need to be incremented at the bottom of `draw`.
-2. STRETCH GOAL -- Only if you have time. Use a variable to make each racer a different shade of the same color. Look at the way the `startY` variable is used for inspiration.
+3. STRETCH GOAL -- Only if you have time. Use a variable to make each racer a different shade of the same color. Look at the way the `startY` variable is used for inspiration.
