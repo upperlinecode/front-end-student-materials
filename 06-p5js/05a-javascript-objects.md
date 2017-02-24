@@ -9,29 +9,19 @@ Over the next few readings we'll be making some bubbles that wobble over the scr
 
 ## A First Attempt
 
-Alright, here's *a lot* of code to make a few little bubbles:
-
 ![bubbles](/resources/bubbles.gif)
+
+That image shows several bubbles, but let's start with one:
 
 ```javascript
 var bubbleSize = 40;
 
-var bubble1X, bubble1Y, bubble2X, bubble2Y,
-    bubble3X, bubble3Y, bubble4X, bubble4Y;
+var bubble1X, bubble1Y;
 
 function setup() {
   createCanvas(500,400);
   bubble1X = random(0, width);
   bubble1Y = random(0, height);
-
-  bubble2X = random(0, width);
-  bubble2Y = random(0, height);
-
-  bubble3X = random(0, width);
-  bubble3Y = random(0, height);
-
-  bubble4X = random(0, width);
-  bubble4Y = random(0, height);
 }
 
 function draw() {
@@ -39,21 +29,9 @@ function draw() {
   fill(250);
 
   ellipse(bubble1X, bubble1Y, bubbleSize, bubbleSize);
-  ellipse(bubble2X, bubble2Y, bubbleSize, bubbleSize);
-  ellipse(bubble3X, bubble3Y, bubbleSize, bubbleSize);
-  ellipse(bubble4X, bubble4Y, bubbleSize, bubbleSize);
 
   bubble1X += random(-2, 2);
   bubble1Y += random(-2, 2);
-
-  bubble2X += random(-2, 2);
-  bubble2Y += random(-2, 2);
-
-  bubble3X += random(-2, 2);
-  bubble3Y += random(-2, 2);
-
-  bubble4X += random(-2, 2);
-  bubble4Y += random(-2, 2);
 }
 ```
 
@@ -61,9 +39,9 @@ Now go ahead and add a 100 bubbles...
 
 Just kidding, that would take ages, your hands would be cramped, and you probably wouldn't learn all that much.
 
-One not-great thing about the code above is that there are so many different variables, which means so many places to make a small typo. Also, there's so many variables that are clearly associated with each other. `bubble3X` and `bubble3Y` for example. Every new bubble adds (at least) 2 new variables.
+One thing that I'm thinking ahead about is that it seems like every time I'd want to add one new bubble, it would require two new variables. But, those two variables are clearly associated with each other. `bubble2X` and `bubble2Y` for example. Every new bubble adds (at least) 2 new variables.
 
-What if we could group those related variables together into one. A bubble is *one thing*, so shouldn't we have it represented in our code as *one variable*. Ideally, a single variable `bubble3` could *store both pieces of data* the `x` and `y`. That would cut our number of variables in half, or even less!
+What if we could group those related variables together into one. A bubble is *one thing*, so shouldn't we have it represented in our code as *one variable*. Ideally, a single variable `bubble1` could *store both pieces of data* the `x` and `y`. That would cut our number of variables in half, or even less!
 
 ## JavaScript Objects
 
@@ -129,26 +107,11 @@ Here's the same program built with objects. This may not seem like a huge change
 ```javascript
 var bubbleSize = 40;
 
-var bubble1, bubble2, bubble3, bubble4;
+var bubble1;
 
 function setup() {
   createCanvas(500,400);
   bubble1 = {
-    x: random(0, width),
-    y: random(0, height)
-  };
-
-  bubble2 = {
-    x: random(0, width),
-    y: random(0, height)
-  };
-
-  bubble3 = {
-    x: random(0, width),
-    y: random(0, height)
-  };
-
-  bubble4 = {
     x: random(0, width),
     y: random(0, height)
   };
@@ -159,21 +122,9 @@ function draw() {
   fill(250);
 
   ellipse(bubble1.x, bubble1.y, bubbleSize, bubbleSize);
-  ellipse(bubble2.x, bubble2.y, bubbleSize, bubbleSize);
-  ellipse(bubble3.x, bubble3.y, bubbleSize, bubbleSize);
-  ellipse(bubble4.x, bubble4.y, bubbleSize, bubbleSize);
 
   bubble1.x += random(-2, 2);
   bubble1.y += random(-2, 2);
-
-  bubble2.x += random(-2, 2);
-  bubble2.y += random(-2, 2);
-
-  bubble3.x += random(-2, 2);
-  bubble3.y += random(-2, 2);
-
-  bubble4.x += random(-2, 2);
-  bubble4.y += random(-2, 2);
 }
 ```
 ## Why are Objects Important
@@ -185,14 +136,15 @@ Objects allow us to group together into one container all the useful data that m
 JavaScript objects are fundamental to how data from the internet is structured and retrieved.  If you wanted to make an app that used information about the current weather, movies playing near your zip-code, or just about any data you can imagine that comes from the internet, it is very, very likely that that data will be in the form of a big JavaScript object. With an understanding of objects, you're on your way to becoming an awesome developer.
 
 ## Mini-Challenge
+1. Add at least one more bubble, make it an object.
 
-1. Add a `size` property to each bubble object. The size can be random or hard-coded in.
+2. Add a `size` property to each bubble object. The size can be random or hard-coded in.
 
-2. Add a `color` property to every bubble object that is a random number between `0` and `255`. Use that number to make the bubbles `fill` a random grayscale color.
+3. Add a `color` property to every bubble object that is a random number between `0` and `255`. Use that number to make the bubbles `fill` a random grayscale color.
 
   You don't have to worry that the property `color` will conflict with p5's built-in `color` function.  This is because you will be accessing it by something like `bubble1.color`. The property `color` is sort of protected inside the object.
 
-3. Wouldn't it be cool if the bubbles were a random color that wasn't gray. One way to do this would be to make 3 new properties inside each object. The keys could be `r`, `g`, and `b` perhaps, and the values a random value.
+4. Wouldn't it be cool if the bubbles were a random color that wasn't gray. One way to do this would be to make 3 new properties inside each object. The keys could be `r`, `g`, and `b` perhaps, and the values a random value.
 
   If you're up for a challenge, one interesting thing is that a key of an object can have a value that is *another object*.  What if you're bubble looked like:
   ```javascript
