@@ -10,7 +10,7 @@ Our goal is to make a series of circles race across the screen to the finish lin
 
 ![race](/resources/race.gif)
 
- Often when you write code you'll start with a first draft the way you would when writing an essay. The process of refining and working toward the final draft that is the most clear and efficient is what is known as **refactoring**.  We'll do some refactoring together here.
+Often when you write code you'll start with a first draft the way you would when writing an essay. The process of refining and working toward the final draft that is the most clear and efficient is what is known as **refactoring**.  We'll do some refactoring together here.
 
 
 Let's start by getting the background and finish line up on the canvas.
@@ -82,13 +82,13 @@ racerSize = 60;
 ```
 #### Variable Declaration
 
-The first step is to say "hey, I want a new variable called `racerSize` to exist". We can't just go ahead and say that this variable now contains the value `60` when the container doesn't even exist yet! That's what the first line `var racerSize;` does.
+The first step is to say "hey, I want a new variable called `racerSize` to exist". We can't just go ahead and say that this variable now contains the value `60` when the container doesn't even exist yet! That's what the first line `var racerSize;` does. `var` stands for variable.
 
 #### Variable Assignment
 
-At this point the variable `racerSize` exists, but it has no value, it's an empty bucket.  We have to **assign** a value to the variable. We do that with an `=`.  That's what's happening here `racerSize = 60;`
+At this point the variable `racerSize` exists, but it has no value, it's an empty bucket.  We have to **assign** a value to the variable. We do that with an `=`.  That's what's happening on the second line `racerSize = 60;`
 
-You'll often see this done on one line, but it's important to understand that it's conceptually two distinct parts.
+You'll often see this done on one line, but it's important to understand that it's conceptually two distinct parts. There are also times when a variable will have to be declared but assigned a value later.
 
 #### 🔔🔑💡 Tip 💡🔑🔔
 > You are probably familiar with variables from math class. While there are some similarities, there are also some key differences. In math `x = 3` and `3 = x` signify the same thing.  This is NOT the case in computer programming. It's very important that on the LEFT HAND side of the `=` is the variable you are *assigning* a value to. On the RIGHT HAND side must be the value to be assigned. `60 = racerSize;` is not valid code :(
@@ -151,7 +151,7 @@ Notice that line:
 age = age + 1;
 ```
 
-That's another thing about variables that doesn't make sense from math class.  Of course `age` would never be equal to `age + 1`. The difference is, here, the equals sign doesnt't mean the one side *equals* the other, it's about *assigning* the value on the right to the variable on the left. We are actually saying that the new value of `age` should be assigned to whatever the current value is + 1, which is just what we wanted to say. Note that *we never used the word `var`*, the variable was already declared and only had to be re-assigned a new value.
+That's another thing about variables that doesn't make sense from math class.  Of course `age` would never be equal to `age + 1`. The difference is that here the equals sign doesn't mean the one side *equals* the other, it's about *assigning* the value on the right to the variable on the left. We are actually saying that the new value of `age` should be assigned to whatever the current value is + 1, which is just what we wanted to say. Note that *we never used the word `var`*, the variable was already declared and only had to be re-assigned a new value.
 
 This is a really common thing in programming, increasing, or *incrementing*, a variable. It's so common there's even a shortcut for it.
 Writing `age += 1` is *exactly the same* as `age = age + 1`.

@@ -61,15 +61,15 @@ Now go ahead and add a 100 bubbles...
 
 Just kidding, that would take ages, your hands would be cramped, and you probably wouldn't learn all that much.
 
-One not-great thing about the code above is that there are so many different variables, which means so many places to make a small typo. Also, there's so many variables that are clearly associated with each other. `bubble3X` and `bubble3Y` for example. Every new brick means (at least) 2 new variables cluttering up the code.  
+One not-great thing about the code above is that there are so many different variables, which means so many places to make a small typo. Also, there's so many variables that are clearly associated with each other. `bubble3X` and `bubble3Y` for example. Every new bubble adds (at least) 2 new variables.
 
-What if we could group those variables together into one. A bubble is *one thing*, so shouldn't we have it in our code as *one variable*. It could be called `bubble3` and *store both pieces of data* the `x` and `y`. That would cut our number of variables in half, or even less!
+What if we could group those related variables together into one. A bubble is *one thing*, so shouldn't we have it represented in our code as *one variable*. Ideally, a single variable `bubble3` could *store both pieces of data* the `x` and `y`. That would cut our number of variables in half, or even less!
 
 ## JavaScript Objects
 
 The way we can do this is with **JavaScript Objects**. An object is *one thing* that can be stored in one variable. An object can have many **properties**, think of these as additional variables stored inside the larger object.
 
-That sounds pretty abstract, but it's not so bad, let's take make a an object called `brick`:
+That sounds pretty abstract, but it's not so bad, let's make a an object called `brick`:
 
 ![first object](/resources/object-intro.gif)
 
@@ -86,11 +86,11 @@ We create objects using curly braces
 var emptyObject = {};
 ```
 
-#### Properties, key: value
+#### Properties, {key: value}
 
 Properties are added inside of an object. A property has two main parts, a *name* and a *value*.  This is very much like a variable, `x = 3`, the name is `x` the value is `3`.
 
-With objects the name is called a **key**.  You will often hear people talk about objects by talking about *key-value pairs*. The object below has one key-value pair, the key is `firstName` and the value is `"Jenny"`:
+With objects the name to a property is called a **key**.  You will often hear people refer to properties and their values as *key-value pairs*. The object below has one key-value pair, the key is `firstName` and the value is `"Jenny"`:
 
 ```javascript
 var student = {firstName: "Jenny"};
@@ -110,21 +110,21 @@ var student = {
 ```
 #### Accessing Properties
 
-That's how objects are created, but we will also need to *access* the values inside of objects. We do this with a dot after the object name.
+We've seen how new objects are created, but we will also need to *access* the values inside of objects. We do this with a dot (a period `.`) after the object name.
 
-`student.firstName` gives us back `"Jenny"`.
+`student.firstName` gives us back the value `"Jenny"`.
 
-`student.grade` gives us back `11`.
+`student.grade` gives us back the value `11`.
 
 #### Adding Properties
 
-You can also use the same *dot notation* plus an `=` to add additional properties to an object after it's created
+You can also use the same *dot* after the object name plus an `=` to add additional properties to an object after it's created or to change existing properties
 
 ![adding properties](/resources/add-to-object.gif)
 
 ## Now with Objects
 
-Here's the same program built with objects. This may not seem like a huge change from before, it's still pretty long. But we're started in the right direction.
+Here's the same program built with objects. This may not seem like a huge change from before, it's still pretty long. But we're headed in the right direction.
 
 ```javascript
 var bubbleSize = 40;
@@ -176,8 +176,13 @@ function draw() {
   bubble4.y += random(-2, 2);
 }
 ```
+## Why are Objects Important
 
-Objects are a super important concept in programming. JavaScript objects are fundamental to how data from the internet is structured. With an understanding of objects, you're on your way to becoming an awesome developer.
+Objects are a super important concept in programming and we've just scratched the surface here.
+
+Objects allow us to group together into one container all the useful data that makes sense to be together.  This makes sense because it's like the real world, an object called `dog` might have `age`, `name`, `color`, and `weight` properties.
+
+JavaScript objects are fundamental to how data from the internet is structured and retrieved.  If you wanted to make an app that used information about the current weather, movies playing near your zip-code, or just about any data you can imagine that comes from the internet, it is very, very likely that that data will be in the form of a big JavaScript object. With an understanding of objects, you're on your way to becoming an awesome developer.
 
 ## Mini-Challenge
 
@@ -185,11 +190,11 @@ Objects are a super important concept in programming. JavaScript objects are fun
 
 2. Add a `color` property to every bubble object that is a random number between `0` and `255`. Use that number to make the bubbles `fill` a random grayscale color.
 
-  You don't have to worry that the word `color` will conflict with p5's built-in `color`.  This is because you will be accessing it by something like `bubble1.color`.
+  You don't have to worry that the property `color` will conflict with p5's built-in `color` function.  This is because you will be accessing it by something like `bubble1.color`. The property `color` is sort of protected inside the object.
 
 3. Wouldn't it be cool if the bubbles were a random color that wasn't gray. One way to do this would be to make 3 new properties inside each object. The keys could be `r`, `g`, and `b` perhaps, and the values a random value.
 
-  If you're up for a challenge, one interesting thing is that a key can have a value that is *another object*.  What if you're bubble looked like:
+  If you're up for a challenge, one interesting thing is that a key of an object can have a value that is *another object*.  What if you're bubble looked like:
   ```javascript
   bubble = {
     x: ...,
