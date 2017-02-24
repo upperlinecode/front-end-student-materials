@@ -21,17 +21,17 @@ var bubble1X, bubble1Y, bubble2X, bubble2Y,
 
 function setup() {
   createCanvas(500,400);
-  bubble1X = random(width/2 - 100, width/2 + 100);
-  bubble1Y = random(height/2 - 100, height/2 + 100);
+  bubble1X = random(0, width);
+  bubble1Y = random(0, height);
 
-  bubble2X = random(width/2 - 100, width/2 + 100);
-  bubble2Y = random(height/2 - 100, height/2 + 100);
+  bubble2X = random(0, width);
+  bubble2Y = random(0, height);
 
-  bubble3X = random(width/2 - 100, width/2 + 100);
-  bubble3Y = random(height/2 - 100, height/2 + 100);
+  bubble3X = random(0, width);
+  bubble3Y = random(0, height);
 
-  bubble4X = random(width/2 - 100, width/2 + 100);
-  bubble4Y = random(height/2 - 100, height/2 + 100);
+  bubble4X = random(0, width);
+  bubble4Y = random(0, height);
 }
 
 function draw() {
@@ -134,23 +134,23 @@ var bubble1, bubble2, bubble3, bubble4;
 function setup() {
   createCanvas(500,400);
   bubble1 = {
-    x: random(width/2 - 100, width/2 + 100),
-    y: random(height/2 - 100, height/2 + 100)
+    x: random(0, width),
+    y: random(0, height)
   };
 
   bubble2 = {
-    x: random(width/2 - 100, width/2 + 100),
-    y: random(height/2 - 100, height/2 + 100)
+    x: random(0, width),
+    y: random(0, height)
   };
 
   bubble3 = {
-    x: random(width/2 - 100, width/2 + 100),
-    y: random(height/2 - 100, height/2 + 100)
+    x: random(0, width),
+    y: random(0, height)
   };
 
   bubble4 = {
-    x: random(width/2 - 100, width/2 + 100),
-    y: random(height/2 - 100, height/2 + 100)
+    x: random(0, width),
+    y: random(0, height)
   };
 }
 
