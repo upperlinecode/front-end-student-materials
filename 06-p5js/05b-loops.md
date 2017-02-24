@@ -134,12 +134,12 @@ for ( var count = 0; ____; ____ ) {
 
 **Second:**
 ```
-for ( ____; when to stop counting; ____ ) {
+for ( ____; when to stop the loop; ____ ) {
   ...
 }
 ```
 
-This is just like the conditional to a `while` loop.
+This is just like the conditional to a `while` loop. Our loop would now look like;
 
 ```javascript
 for ( var count = 0; count < 3; ____ ) {
@@ -164,6 +164,10 @@ for ( var count = 0; count < 3; count += 1 ) {
 }
 ```
 
+This may seem like a lot, but you will definitely get the hang of it!
+
+
+
 #### 🔔🔑💡 Tip(s) 💡🔑🔔
 **Common Practices**
 > Remember how `count += 1` is a shortcut for `count = count + 1` because incrementing is such a common thing to do.  Well, incrementing **by 1** is a very, very common way to increment, so there's even a shortcut for that!
@@ -179,6 +183,27 @@ for ( var count = 0; count < 3; count += 1 ) {
 >```javascript
 for ( var i = 0; i < 3; i++ ) {
   //...
+}
+```
+
+Here's the final code with a `for` loop:
+
+```javascript
+function setup() {
+  createCanvas(500,400);
+}
+
+function draw() {
+  background(0);
+  fill(250);
+
+  var x = 50;
+
+  for (var i = 0; i < 3; i++) {
+    ellipse(x, height/2, 40, 40);
+    x += 50;
+  }
+
 }
 ```
 
