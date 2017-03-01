@@ -1,6 +1,6 @@
 # Conditional Logic
 
-![conditional bounce](/resources/conditional-bounce.gif)
+![conditional bounce](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/conditional-bounce.gif)
 
 Think about how you would write code that would produce the image above. Currently, we're missing one key tool that will enable us to write this code. Here's what we're able to do so far.  
 
@@ -26,7 +26,7 @@ function draw() {
 
 What happens with that code:
 
-![lost ball](/resources/lost-ball.gif)
+![lost ball](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/lost-ball.gif)
 
 As soon as the ball goes into the black area we lose sight of it.  To fix this we would need code that instructed the computer:
 
@@ -52,7 +52,7 @@ Only if the code inside the parentheses *evaluates* to `true`, will the line `fi
 
 That's a weird word, it comes from someone's name, George Boole. He studied logic concerning two values, true or false, on or off, 0 or 1.  That kind of thinking is fundamental to how computer's work.  After we study some basic Boolean logic using the Boolean values `true` and `false`, we'll discuss what it means for code to *evaluate* to `true` or `false`.
 
-![your first if](/resources/first-if.gif)
+![your first if](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/first-if.gif)
 
 This some brand new functionality for us, pretty cool! The line that set the ball's fill to green *only was run by the computer when the condition was `true`*. Otherwise, the line was literally ignored. The code didn't do anything different.
 
@@ -71,8 +71,9 @@ The tool's we use to do this are called *comparison operators*, and they're not 
 - `<=` less than OR equal to
 - `==` exactly equal to
 - `!=` NOT equal to
+- `!` NOT (this means 'the opposite'. It will make anything `true` be `false`, and anything that is `false` be `true`)
 
-![operators](/resources/operators.gif)
+![operators](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/operators.gif)
 
 And that's them in action!
 
@@ -100,7 +101,7 @@ A slightly more technical conditional to determine if the ball is in the bottom 
  }
  ```
 
-![black to white](/resources/black-to-white.gif)
+![black to white](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/black-to-white.gif)
 
 Yay! Sort of.. before we get to the next conditional needed to make the ball bounce off the edge and reverse direction let's look back at the way we said:
 
@@ -124,7 +125,79 @@ It's cool to see how putting the problem into words translates really well into 
 
 We can cover getting the ball to bounce in the next reading.
 
+## A Quick Quiz
+
+Let's put our knowledge of comparison operators to the the test. Do your best to answer the following questions. The answers are at the bottom of the reading.
+
+Given the code:
+
+```javascript
+// code for questions 1 - 3
+var highNumber = 99;
+var lowNumber = 30;
+```
+
+Will the following statements evaluate to `true` or `false`?
+
+**1** - `highNumber > lowNumber`
+
+**2** - `highNumber <= lowNumber`
+
+**3** - `lowNumber != highNumber`
+
+```javascript
+// code for questions 4 - 6
+if (x < y) {
+  print('hi')
+} else  {
+  print('bye')
+}
+```
+
+**4** - What will the code above print if the variables were initialized as follows?
+```javascript
+var x = 3;
+var y = 4;
+```
+
+**5** - What will the code above print if the variables were initialized as follows?
+```javascript
+var x = 3;
+var y = 2;
+```
+
+**6** - What will the code above print if the variables were initialized as follows?
+```javascript
+var x = 3;
+var y = 4;
+x = x + 1;
+```
+
+```javascript
+// code for questions 7 - 8
+ var started = true;
+```
+
+Does the following code evaluate to `true` or `false`?
+
+**7** - `!started`
+
+**8** - `!!started`
+
 ## Resources
+- [Coding Train Introduction to Conditional Statements](https://www.youtube.com/watch?v=1Osb_iGDdjk&index=11&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
 - [George Boole](http://www.telegraph.co.uk/technology/google/google-doodle/11968997/george-boole-google-doodle.html)
 - [JavaScript if/else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [JavaScript Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+
+## Answers
+```
+1- true
+2- false
+3- true
+4- 'hi'
+5- 'bye'
+6- 'bye'
+7- false
+8- true
+```
