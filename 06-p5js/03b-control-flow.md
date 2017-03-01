@@ -35,6 +35,8 @@ function draw() {
 
 This results in a ball that changes color, but doesn't bounce back when it hits the edge of the canvas. Instead, it just continues off of it.
 
+![black to white](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/black-to-white.gif)
+
 Try to put the logic into words for bouncing off the bottom edge and reversing direction.
 
 ```
@@ -61,7 +63,7 @@ function draw() {
 
 Look at what that does:
 
-![stuck ball](/resources/stuck-ball.gif)
+![stuck ball](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/stuck-ball.gif)
 
 Can you figure out why the ball gets stuck?  Try to think like your computer, start at the top and read down.
 
@@ -100,7 +102,7 @@ function draw() {
 }
 ```
 
-![first bounce](/resources/first-bounce.gif)
+![first bounce](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/first-bounce.gif)
 
 Amazing! The first bounce. It makes sense that it only bounces on the bottom since we never wrote the logic for bouncing off the top.  
 
@@ -227,7 +229,25 @@ I think this is more clear. It's how I would explain the problem to someone in w
 Nice job!
 
 ## Mini-Challenge
-(TODO: add control flow mini-challenge / logical operators)
+1. Draw a rectangle in the middle of the canvas, if the mouse is in the top half of the canvas it should be one color, if the mouse is in the bottom half it should be a second color.
+
+ ![flip](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/flip.gif)
+
+ Use `if` and `else`.
+
+2. Next, draw 4 different colored smaller squares in each corner. When the mouse is hovering over any of them, the center square should be the same color as the square. If you are not hovering over any squares the middle square should be gray.
+
+ Get one square working at a time and test that it works. That way you won't get overwhelmed.
+
+ ![color-hover](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/color-hover.gif)
+
+ Use `if`, `else if`, `else` and the `&&` logical operator.
+
+3. Change your code so that the two opposite smaller squares are the same color
+
+ ![2-hover](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/2-hover.gif)
+
+ Try to use only 1 `else if`. To do this you will have to use the `||` logical operator.  You can use parentheses just like you would in math to group statements together `(one conditional statement) || (another conditional statement)`
 
 ## Resources
 
