@@ -29,7 +29,7 @@ function mousePressed() {
 
 You should see something like this in the console every time you click.
 
-![pressed](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/pressed.gif)
+![pressed](/resources/pressed.gif)
 
 If you don't, check your spelling and syntax before moving forward.
 
@@ -56,10 +56,31 @@ function mousePressed() {
 
 ![press event](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/press-event.gif)
 
-You might have notice that after you press the mouse once you're line stays white.  Your first **Mini-Challenge** is to define a function `mouseReleased()` that resets the line back to black.
+Let's use the `mouseReleased` function to make this more like a real drawing app. When the mouse is pressed we'll draw, after it's released we'll get rid of the `stroke` and the `fill`.
+
+```javascript
+function setup() {
+  createCanvas(400,400);
+}
+
+function draw() {
+  noStroke();
+  ellipse(mouseX, mouseY, 20, 20);
+}
+
+function mousePressed() {
+  fill(0);
+}
+
+function mouseReleased() {
+  noFill();
+}
+```
+
+![cool](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/cool.gif)
 
 #### 🔔🔑💡 Tip 💡🔑🔔
-> In the above code I would have loved to call my variable `color` instead of the harder-to-understand `col`, Unfortunately `color` is a function in p5.  If I defined my own variable called `color` I would have **over-written** p5's function and could experience some weird behavior. Before declaring a new variable or a function it's always good to check that the name isn't already taken by p5.
+> In the first code snippet above I would have loved to call my variable `color` instead of the harder-to-understand `col`, Unfortunately `color` is a function in p5.  If I defined my own variable called `color` I would have **over-written** p5's function and could experience some weird behavior. Before declaring a new variable or a function it's always good to check that the name isn't already taken by p5.
 
 ## Mini-Challenge
 ### `mouseClicked()`
