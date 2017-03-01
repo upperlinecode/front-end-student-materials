@@ -23,7 +23,9 @@ Look at the picture above and you'll notice that each picture have some characte
 + After the padding, we hit the picture frame itself. In CSS we call this the **border**.
 + Last, we have the space beyond the frame that distances it from the other frames on the wall - this is the **margin**.
 
-+ Types of Layout (display: float, block, inline etc)
+[INSERT GIF HERE]
+
+Each of these properties (width, height, padding, border, and margin) can be modified in css. Take a minute to play around with them by opening up developer tools and changing their values.
 
 # Resources
 + [CodeAcademy - CSS Positioning](https://www.codecademy.com/courses/web-beginner-en-6merh/0/1#)
