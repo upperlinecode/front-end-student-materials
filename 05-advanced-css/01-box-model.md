@@ -23,9 +23,19 @@ Look at the picture above and you'll notice that each picture have some characte
 + After the padding, we hit the picture frame itself. In CSS we call this the **border**.
 + Last, we have the space beyond the frame that distances it from the other frames on the wall - this is the **margin**.
 
-[INSERT GIF HERE]
+![box model gif](https://s3.amazonaws.com/upperline/curriculum-assets/css/BoxModel.gif)
 
 Each of these properties (width, height, padding, border, and margin) can be modified in css. Take a minute to play around with them by opening up developer tools and changing their values.
+
+## Page Layout
+Our websites are still probably not as well styled as we want them to be, and that's most likely because our content isn't laid out in an interesting way. Without an understanding of the box model, our layouts end up being pretty boring. Elements follow each other one at a time - there aren't any sidebars, and the spacing between elements just doesn't look right.
+
+The box model allows us to get really creative with the way we put content on the screen. By placing our content (text, images, etc) inside of divs, and giving those divs classes, we can modify their position and size to improve the layout of our page.
+
+**CSS Layout is HARD. We're going to learn a bit here, but we'll be using layout frameworks later on to make our lives easier!**
+
+## Learn Layout
+To learn about different ways of laying out content, head to [Learn Layout](http://learnlayout.com/) and walk through their lesson (They explain layout way better than we can!). Then come back to try your hand at some basic layout labs!
 
 # Resources
 + [CodeAcademy - CSS Positioning](https://www.codecademy.com/courses/web-beginner-en-6merh/0/1#)
