@@ -3,7 +3,7 @@
 Now that you know how to draw shapes, let's add some color!
 
 
-![jake paints](https://media.giphy.com/media/FVbsOFYqdARtS/giphy.gif)
+![jake paints](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/jake.gif)
 
 Start with this code in your `sketch.js` file to make a black and white line drawing of an apple.
 
@@ -19,7 +19,7 @@ function draw() {
 }
 ```
 
-![apple](/resources/blankApple.png)
+![apple](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/blankApple.png)
 
 To fill in the shapes with color we will use a function called `fill`.
 
@@ -27,14 +27,14 @@ To fill in the shapes with color we will use a function called `fill`.
 
 `fill` can take **3 arguments**. These arguments are the **Red**, **Green**, and **Blue** color values in a **range from 0 to 255**.  This works exactly the same way the RGB color system works in CSS, all 3 of the colors combined at the maximum value of `255` would produce white. All 3 values at `0` is the absence of any color, so that produces black. We combine varying amounts of Red, Blue, and Green to result in any color in between.
 
-![rgb](https://media.giphy.com/media/yXDHuqjGvBt9m/giphy.gif)
+![rgb](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/rgb.gif)
 
 To paint the apple a nice, rich red we can call the `fill` function at the beginning of `draw` with `200` for the red value, and `0` for blue and green.
 
 ```javascript
 fill(200, 0, 0);
 ```
-![all red apple](/resources/all-red-apple.gif)
+![all red apple](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/all-red-apple.gif)
 
 Hmm... All of the shapes became red. Close, but not quite what we want to see.
 
@@ -59,7 +59,7 @@ function draw() {
   quad(145, 70, 120, 60, 110, 45, 125, 50);
 }
 ```
-![filled apple](/resources/filled-apple.png)
+![filled apple](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/filled-apple.png)
 
 Nice! 🍎
 
@@ -73,7 +73,7 @@ Here's where we want to place the ellipse:
 
 Watch the gif below closely.
 
-![take a bite](/resources/apple-bite.gif)
+![take a bite](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/apple-bite.gif)
 
 You probably noticed a few important things:
 
@@ -117,7 +117,7 @@ function draw() {
   ellipse(220, 120, 60, 60);
 }
 ```
-![finished bite](/resources/apple-bite-stroke.png)
+![finished bite](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/apple-bite-stroke.png)
 
 ## Mini-Challenge
 
@@ -127,7 +127,7 @@ function draw() {
 
  3. Now that you're an expert on color and opacity, use the code above that created the apple to add a gleam of light on the apple and make it rest on a colored countertop. The result should look something like this:
 
- ![final apple](/resources/finished-apple.png)
+ ![final apple](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/finished-apple.png)
 
  The `background` function may be helpful here. It takes the same arguments `fill` and `stroke` do, but remember there is always the documentation!
 
