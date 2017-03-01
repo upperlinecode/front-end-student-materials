@@ -103,3 +103,4 @@ Many more examples of what you can do with p5 can be found at these links:
 
 - [p5.js Examples](https://p5js.org/examples/)
 - [Coding Train p5.js Challenges](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH)
+- [p5.js Interactive Introductory Video](http://hello.p5js.org/)
