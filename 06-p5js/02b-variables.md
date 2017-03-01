@@ -4,11 +4,11 @@ The concept of variables is fundamental to programming and extends beyond just a
 
 ## Off to the Races
 
-![fail](https://media.giphy.com/media/e95xPaXvR5kI/giphy.gif)
+![fail](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/races.gif)
 
 Our goal is to make a series of circles race across the screen to the finish line:
 
-![race](/resources/race.gif)
+![race](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/race.gif)
 
 Often when you write code you'll start with a first draft the way you would when writing an essay. The process of refining and working toward the final draft that is the most clear and efficient is what is known as **refactoring**.  We'll do some refactoring together here.
 
@@ -42,11 +42,11 @@ function draw() {
   ellipse(0, 400, 100, 100);
 }
 ```
-![too big](/resources/too-big-to-start.png)
+![too big](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/too-big-to-start.png)
 
 The circles seem way too big. No worries...
 
-![painful](/resources/painful.gif)
+![painful](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/painful.gif)
 
 Wow... that was painful to watch... so slow. What if I want to change the size again??
 
@@ -70,7 +70,7 @@ var racerSize = 60;
 
 That's it. Now instead of **hard-coding** in the number `60` or whatever it is, place the variable name `racerSize` as the third and fourth arguments to each `ellipse` function. Check this out:
 
-![first variable](/resources/first-variable.gif)
+![first variable](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/first-variable.gif)
 
 SO MUCH NICER! Not only is our job easier if we have to change something, the code is easier to understand.
 
@@ -139,11 +139,11 @@ This is a perfect place to use a variable because we need a value for the `x` co
 
 Imagine you have a variable called `age` that stores the value of your current age.  Then you have a birthday! You'd have to tell your variable that it's new value should be *whatever it's current value is* plus one additional year.
 
-![b-day](https://media.giphy.com/media/26FPwnf16KJUUqJGM/giphy.gif)
+![b-day](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/bday.gif)
 
 Here's how that is done in code:
 
-![increment](/resources/increment.gif)
+![increment](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/increment.gif)
 
 Notice that line:
 
@@ -164,7 +164,7 @@ You can also decrease, or *decrement* a value. `y = y - 10` or `y -= 10`. Both a
 
 Hopefully that was clear, let that take a moment to sink in before seeing how it's all put together.
 
-![tie](/resources/tie-race.gif)
+![tie](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/tie-race.gif)
 
 A 4 way tie! Every time `draw` is called the `x` coordinate of each circle has increased by `2`.  Here's the final code with an additional variable `speed`:
 
