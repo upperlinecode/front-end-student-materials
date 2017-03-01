@@ -1,6 +1,6 @@
 # Events
 
-![rube goldberg](https://media.giphy.com/media/ywNJFJR54KfQY/giphy.gif)
+![rube goldberg](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/rube.gif)
 
 When you interact with any program on your computer you are used to it being responsive to your input. Your input might be clicking certain things, moving your mouse to different areas, or pressing certain keys on the keyboard These ways that you interact with the program are called **events**.
 
@@ -29,7 +29,7 @@ function mousePressed() {
 
 You should see something like this in the console every time you click.
 
-![pressed](/resources/pressed.gif)
+![pressed](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/pressed.gif)
 
 If you don't, check your spelling and syntax before moving forward.
 
@@ -54,7 +54,7 @@ function mousePressed() {
 }
 ```
 
-![press event](/resources/press-event.gif)
+![press event](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/press-event.gif)
 
 You might have notice that after you press the mouse once you're line stays white.  Your first **Mini-Challenge** is to define a function `mouseReleased()` that resets the line back to black.
 
@@ -68,23 +68,17 @@ A mouse 'press' event means the mouse is being held down. A 'click', on the othe
 - Your Mission, should you choose to accept it, is to use the `mouseClicked` function to launch a rocket.
 Your goal is something like this:
 
-![rocket launch](/resources/rocket-launch.gif)
+![rocket launch](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/rocket-launch.gif)
 
 Use this starter code:
 
 ```javascript
+// some variables that determine how to draw the rocket
 var groundLevel = 550;
-var rocketBodyHeight = 80;
-var rocketBodyWidth = 20;
-var rocketBodyY = groundLevel - rocketBodyHeight;
-var rocketBodyX = 200 - rocketBodyWidth/2;
-
-var rocketConeX1 = rocketBodyX;
-var rocketConeY1 = rocketBodyY;
-var rocketConeX2 = rocketBodyX + rocketBodyWidth;
-var rocketConeY2 = rocketBodyY;
-var rocketConeX3 = rocketBodyX + rocketBodyWidth/2;
-var rocketConeY3 = rocketBodyY - 20;
+var rocketHeight = 80;
+var rocketWidth = 20;
+var rocketY = groundLevel - rocketHeight;
+var rocketX = 200 - rocketWidth/2;
 
 var rocketSpeed = 0;
 
@@ -93,17 +87,25 @@ function setup() {
 }
 
 function draw() {
-  background(252);
+  background(250);
+  // ground
   line(0, groundLevel, width, groundLevel);
 
-  rect(rocketBodyX, rocketBodyY, rocketBodyWidth, rocketBodyHeight)
-  triangle(rocketConeX1, rocketConeY1, rocketConeX2, rocketConeY2, rocketConeX3, rocketConeY3);
+  // rocket body
+  rect(rocketX, rocketY, rocketWidth, rocketHeight)
 
-  rocketBodyY += rocketSpeed;
-  rocketConeY1 += rocketSpeed;
-  rocketConeY2 += rocketSpeed;
-  rocketConeY3 += rocketSpeed;
+  // rocket top
+  triangle(rocketX, rocketY, rocketX + rocketWidth, rocketY, rocketX + rocketWidth/2, rocketY - 20);
+
+  // increase the rocket's speed
+  // rocketSpeed is initially set to 0
+  rocketY += rocketSpeed;
 }
+
+function mouseClicked() {
+  // your code here...
+}
+
 ```
 
 **Hint:** *when the click event happens, what variable needs to change?*
