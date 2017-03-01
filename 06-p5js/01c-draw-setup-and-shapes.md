@@ -1,5 +1,5 @@
 # Functions: `draw`, `setup`, and Shapes
-![dolphin](https://media.giphy.com/media/Q6Jk8FeKkSLLi/giphy.gif)
+![dolphin](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/dolphin.gif)
 
 Every artist needs a canvas. Obviously.
 
@@ -20,7 +20,7 @@ function draw() {
 
 Preview your `index.html` and check out what happens when you move your mouse!
 
-![we're drawing!](http://g.recordit.co/D2aJ134ms1.gif)
+![we're drawing!](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/drawing.gif)
 
 All the words you see above such as `createCanvas`, `fill`, or `ellipse` are
 special words coming from, you guessed it, the p5.js library.  They need to be written
@@ -44,7 +44,7 @@ You probably noticed the word `function` in the code above before `setup` and `d
 
 Think back to flip-books you may have made as a child.
 
-![flipbook](https://media.giphy.com/media/v7YBzmzsJmqGc/giphy.gif)
+![flipbook](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/flipbook.gif)
 
 #### `setup`
 You can think of `setup` as a function that provides information like how big each page in your flip-book should be or how fast one should flip through. When a project has the p5.js library loaded into it, `setup` is *called one time when the page loads*
@@ -161,7 +161,7 @@ Luckily p5 has amazing **documentation** that can be found [here](https://p5js.o
 Code documentation shows and describes how functions are intended to be used. Let's look at the documentation for the `line()` function. If you open the link above you'll find it under the heading "Shapes" in the section called "2D Primitives". Otherwise [this link](https://p5js.org/reference/#/p5/line) will take you directly there
 
 ### `line` Documentation In Detail
-![Example](/resources/lineExample.gif)
+![Example](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/lineExample.gif)
 
 #### Example
 The Example section is a fully interactive window that allows you to change the arguments and see the results in real time. Try it!
@@ -171,7 +171,7 @@ The next section provides an english description and any additional information.
 >Draws a line (a direct path between two points) to the screen. The version of line() with four parameters draws the line in 2D. To color a line, use the stroke() function. A line cannot be filled, therefore the fill() function will not affect the color of a line. 2D lines are drawn with a width of one pixel by default, but this can be changed with the strokeWeight() function.
 
 #### Syntax and Parameters
-![syntax and params](/resources/syntaxandparams.png)
+![syntax and params](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/syntaxandparams.png)
 
 In the Example section of the documentation we saw the `line` function being passed number vales: `line(30, 20, 85, 75);`.
 
