@@ -4,7 +4,7 @@ Imagine you are the top p5.js programmer for the  UpperLine Rocket Corporation. 
 
 She asks that in a 200 x 200 canvas you draw a 50 x 50 pixel square in the exact center representing the launch pad.  From the center of the launch pad there should be 3 lines representing the various flight paths. One that goes directly up to the top of the canvas, one that ends in the bottom left corner, and one that heads toward the bottom right corner. Something that looks like this:
 
-![landing pad](/resources/landing-pad.png)
+![landing pad](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/landing-pad.png)
 
 "No problem at all", you reply as your mind starts tackling the problem.
 
@@ -36,7 +36,7 @@ Your captain is impressed. So impressed, they want to see it drawn on a bigger c
 
 You go ahead and change the canvas size, but suddenly your code does not draw the correct model as described.
 
-![woops](/resources/launch-pad-resize.gif)
+![woops](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/launch-pad-resize.gif)
 
 While you could redo all your calculations and get the program to work as intended with this new canvas size, that might not totally solve the problem.  What if you were asked to change the canvas size yet again? Would you have multiple different versions of the program for each canvas size?
 
@@ -53,7 +53,7 @@ Another way to think of a variable is like a bucket or container with a label on
 
 To prove that these variables exist, we'll use the `print` function. If you open up the developer tools in Chrome and click in the console tab (by either right clicking the screen then clicking "Inspect" or use a keyboard, usually command+option+j) you will be able to see whatever is logged to the console with `print`.
 
-![print width](/resources/print-width.gif)
+![print width](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/print-width.gif)
 
 As shown here, we see the *value* of the variable `width`, `800` logged to the console. In fact, it's logged many, many times in a row because `draw` is called repeatedly over and over. Each time it prints the value of the variable `width`. That's what the gray and white increasing number in the console indicates, the same output is being printed multiple times.
 
@@ -72,7 +72,7 @@ You'll see that that is a pretty direct translation into code of the steps we th
 
 And, check it out, the *same exact code* will work with any sized canvas. How dynamic!
 
-![dynamic sizing with variables](/resources/dynamic-variables.gif)
+![dynamic sizing with variables](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/dynamic-variables.gif)
 
 ## `mouseX` and `mouseY`
 Two additional built-in variables `mouseX` and `mouseY` are also available to us. The value that they hold onto is the `x` or `y` coordinate of the mouse on the canvas. Try using `print` and see how the values change as you move your mouse.
@@ -97,11 +97,19 @@ function draw() {
 }
 ```
 
-![radar](/resources/radar.gif)
+![radar](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/radar.gif)
 
 Pretty cool!  `mouseX` and `mouseY` open up a lot of interesting possibilities.
 
-## Mini-Challenge
+## Mini-Challenges
 
-1. Use `width` and `height` to divide the a canvas into 4 different color squares.
-2. Use `mouseX`, `mouseY` and the `ellipse` function to make a program that can draw a line as you move your mouse. Write your name in cursive. 
+1. Use `width` and `height` to divide the a canvas into 4 different color squares. The arguments you provide to draw each rectangle should only use a combination of `width`, `height`, and `0`.  Half the width would be `width/2` or `width * 0.5`
+
+  ![4 squares](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/4squares.png)
+
+2. Make a web using several `line`s.  The center of the web should move as you move your mouse.  There should be lines going from the center to all 4 corners as well as the midpoints of each side of the canvas.
+ ![web](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/web.gif)
+
+3. Use `mouseX`, `mouseY` and the `ellipse` function to make a program that can draw a line as you move your mouse. Write your name in cursive. If you have to dot an 'i' or cross a 't' (or an 'x')... good luck!
+
+  ![your name](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/alex.gif)
