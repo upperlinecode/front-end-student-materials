@@ -1,7 +1,7 @@
 # Arrays and Loops
 We now have the ability to make crazy numbers of bubbles without writing crazy amounts of code! We're starting to really have some powerful tools at our disposal.
 
-![tools](https://media.giphy.com/media/yhcqymRLlv7K8/giphy.gif)
+![tools](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/tools.gif)
 
 ## Back to the Bubbles
 
@@ -29,7 +29,7 @@ function mouseClicked() {
 }
 ```
 
-![push something](/resources/push-something.gif)
+![push something](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/push-something.gif)
 
 So cool! Every time we click we add an element to the array and we can see that it's happening. Right now that element is just an arbitrary value.  Let's go ahead and push on a real bubble object that has the correct properties.
 
@@ -73,11 +73,11 @@ for(var i = 0; i < bubbles.length; i++) {
 
 *Inside* the loop, we'll use whatever the current value of `i` is to make a variable called `currentBubble`.
 
-![current bubble](/resources/currentBubble.gif)
+![current bubble](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/currentBubble.gif)
 
 Amazing! Every time we click a random bubble appears. It's not moving though.  Think for a second about *where* we need to add to the code to do this.
 
-If you answered *inside the loop* you are %100 correct. That's the only place where we're able to change, for example, the third bubble's speed or fourth bubble's speed, or any individual bubble's speed-- inside the loop.
+If you answered *inside the loop* you are 100% correct. That's the only place where we're able to change, for example, the third bubble's speed or fourth bubble's speed, or any individual bubble's speed-- inside the loop.
 
 The `for` loop should look like this:
 
@@ -91,7 +91,7 @@ for(var i = 0; i < bubbles.length; i++) {
 }
 ```
 
-![cool, but kind of creepy](/resources/kind-of-creepy.gif)
+![cool, but kind of creepy](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/kind-of-creepy.gif)
 
 We just put together in a few minutes what would have taken us an hour or more before, good work!
 
@@ -146,7 +146,7 @@ function mouseClicked() {
 
 The next step is to remove the bubble with `splice`. Remember `splice` will need the index to remove, for us that's `i`, and the number of elements to remove, `1`.
 
-![pop and add](/resources/pop-and-add.gif)
+![pop and add](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/pop-and-add.gif)
 
 Our removal actually works! It just seems sort of weird that we still add a bubble on every click even if that click was supposed to pop a bubble.
 
@@ -201,6 +201,6 @@ function mouseClicked() {
 ```
 
 And the final product:
-![popping off](/resources/popping-off.gif)
+![popping off](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/popping-off.gif)
 
 Have fun popping bubbles!
