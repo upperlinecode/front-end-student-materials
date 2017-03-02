@@ -204,3 +204,13 @@ And the final product:
 ![popping off](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/popping-off.gif)
 
 Have fun popping bubbles!
+
+## Extension Challenges
+
+1. Instead of each bubble popping immediately on the first click, make the bubble grow larger with each click until it reaches some maximum size. Then, on the next click, it will pop.
+
+ ![three-strikes](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/three-strikes.gif)
+
+ You will probably need to add an additional property to each bubble object to track it's size.
+
+2. Add a `lifespan` property to each bubble object that has a value of `0` when it is pushed into the `bubbles` array.  Every time `draw` is called `lifespan` should increment by `1`. If `lifespan` is greater than `300` the bubble should automatically pop.
