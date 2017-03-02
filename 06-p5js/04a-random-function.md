@@ -1,6 +1,6 @@
 # The `random` function
 
-![simpson](https://media.giphy.com/media/xT5LMTsSK0xZPVlfPy/giphy.gif)
+![d'oh](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/doh.gif)
 
 Earlier we built a small racing program. It probably wasn't as fun as it could be because either all the balls moved at the same speed, or the winner would be the same circle every time. The one with the highest speed hard coded in would always win.  Wouldn't it be great if we could add some *unpredictability*, so that every time we ran the code different values produced a different winner.
 
@@ -25,7 +25,7 @@ var winningNumber = random(100);
 
 ## Back to the Races
 
-![random race](/resources/random-race.gif)
+![random race](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/random-race.gif)
 
 Here's the code that generates the random races.
 
@@ -71,19 +71,23 @@ function draw() {
 }
 ```
 
-*Notice that to call p5's `random` the function call must be inside of a p5.js function like `setup` or `draw`.  I declared the variables up top and then assigned them a random value once in `setup`.*
+*Notice that to use p5's `random` function it must be called inside of a p5.js function like `setup` or `draw`.*  
 
-### Upping the stakes.
+I declared the variables up top and then assigned them a random value once in `setup()`. This chooses *one* random value and then uses that throughout the program.  
+
+What do you think would happen if we set the speed using the `random` function inside of `draw()` instead of in the `setup()` function?
+
+### Upping the Stakes
 
 Even this race is a little bit boring. Whichever circle begins with the top speed will surely always win.  What if at a random point in the middle of the race the racers changed their speed. Either making a strong push to the finish line or growing tired toward the end.
 
-![finish line](https://media.giphy.com/media/rIPeAYjSXJIFq/giphy.gif)
+![finish line](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/finish.gif)
 
 I'll pick a random `switchPoint` value for each racer at which to change their speed, once they pass it, they will be assigned a new random speed value.
 
 Now this is much more interesting
 
-![tight finish](/resources/tight-finish.gif)
+![tight finish](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/tight-finish.gif)
 
 The final code
 
@@ -159,16 +163,22 @@ function draw() {
 }
 ```
 
-## Mini-Challenge
+## Mini-Challenges
 
 1. Use the `random` function to make each racer a random color.  You can randomize one of RGB values, or all three!
+
 2. Use the `random` function to make at least one bubble (an ellipse) that randomly shakes across the screen.
 
- ![bubbles](/resources/bubbles.gif)
+ ![bubbles](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/bubbles.gif)
 
- Hint: You want `random` to be called every frame with a new random value, make sure you call it *inside of the `draw` function*. This will ensure that a new random value is picked each time.
+ **Hint:** You want `random` to be called every frame with a new random value, make sure you call it *inside of the `draw` function*. This will ensure that a new random value is picked each time.
 
- Hint: The idea is that the bubble may sometimes move a small number of pixels to the left, sometimes to the right, sometimes up, sometimes down. The range given to `random` to randomly choose a number between can't start at 0.
+ **Hint:** The idea is that the bubble may sometimes move a small number of pixels to the left, sometimes to the right, sometimes up, sometimes down. The range given to `random` to randomly choose a number between can't start at 0.
+
+ ### T.M.R.T.Y.C.B
+3. *The Most Random Thing You Can Build*
+
+ Try to make the most random possible thing. Coordinates can be random values, widths and heights can be random, colors can be randomized.  What if your range of random values was between `0` and a randomly chosen value?
 
 ## Resources
 
