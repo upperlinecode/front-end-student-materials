@@ -2,13 +2,13 @@
 
 Imagine that you were making a thermometer program that showed temperatures between 0 and 100 degrees fahrenheit. As the temperature slides up toward 100 degrees you want the background to be solid red and a temperature of 0 degrees should be solid blue. In between should be shades of purple.
 
-![temp slider](/resources/temp.gif)
+![temp slider](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/temp.gif)
 
 ## Using `map`
 
 Let's start out with something a bit simpler. As we move the mouse from left to right let's make the background change from white to black.
 
-![b/w fade](/resources/fade.gif)
+![b/w fade](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/fade.gif)
 
 So if we started to build this, as `mouseX` goes from `0` on the left to the full `width` of the canvas on the right (let's say the canvas width is `600`), the background color should go from `0`, black, to `255`, white.
 
@@ -76,7 +76,7 @@ function draw() {
 
 But that doesn't quite work.
 
-![purple fade](/resources/purple-fade.gif)
+![purple fade](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/purple-fade.gif)
 
 Think about our blue color range for a second.  The closer the mouse is to `0` in the x-axis the closer our blue value should be to `255`.  So we actually need to flip the *starting* and *ending* values for our range.
 
@@ -87,6 +87,50 @@ var blue = map(mouseX, 0, width, 255, 0);
 ```
 
 Nice, that should work!
+
+## Mini-Challenge
+
+```javascript
+var sunSize = 400;
+
+function setup() {
+  createCanvas(400,400);
+  frameRate(15);
+}
+
+function draw() {
+ background(0);
+
+ noStroke();
+ fill(245, 180, 80);
+ ellipse(width/2, height/2, sunSize, sunSize);
+
+
+ if (sunSize > 0) {
+  sunSize -= 1;
+ }
+}
+```
+
+The code above will make a large orange circle slowly shrink to nothing.
+
+*Notice that the frameRate was made smaller with the `frameRate` function. p5's normal frame rate is `60` frames per second. This means `draw` is called 60 times each second. Here we slowed it down to `15` fps.*
+
+Your job is to make it blend into the background and become black as it gets smaller:
+
+![sunset](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/sunset.gif)
+
+Experiment and have fun! Below is the result with the exact same code, only the line `background(0);` is moved from `draw` into the `setup` function so the background is only drawn once.  Why is the result so different?
+
+![peach](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/peach.gif)
+
+And here is *that* code with the values of the color ranges reversed
+
+![better sun](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/better-sun.gif)
+
+#### Expert Challenge
+
+Alter the above code to make a realistic looking sunset. Things I would think about: maybe the size of the "sun" shouldn't shrink all the way to `0` and it's `x` and `y` coordinates can slowly move below a horizon line, maybe none of the ranges should map all the way to or from `0`, maybe the color of the sky could be mapped to change along with the color of the sun.
 
 ## Resources
 
