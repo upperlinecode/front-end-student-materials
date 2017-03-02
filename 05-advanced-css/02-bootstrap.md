@@ -2,6 +2,8 @@
 
 As we recently learned, page layout with css can be a long and tedious process. It makes my head hurt. As developers, whenever we encounter situations like this we need to ask ourselves **"Is there an easier way to do this?"**. Developers are lazy.
 
+[LAZY DOG GIF]
+
 Well, it turns out that Bootstrap (and other front-end frameworks like Foundation) are the answer to our laziness! Bootstrap is a CSS library that makes website layout a breeze. It's used by many of the world's top websites.
 
 ## What is Bootstrap? Why is it Useful?
@@ -10,12 +12,12 @@ Bootstrap is a CSS **library**. A library is just a collection of code that has 
 
 ## Integrating the Bootstrap Framework into a Project
 
-At the end of the day, this is all CSS that someone else has written for us. To use it, we have to link to the Bootstrap stylesheet in the same way we would link to our own stylesheets in the `<head>` tag:
+At the end of the day, Bootstrap is just *CSS that someone else has written for us.* To use it, we have to link to the Bootstrap stylesheet in the same way we would link to our own stylesheets in the `<head>` tag:
 
 ```html
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 ```
 Notice that I also linked my own stylesheet **after** linking to Bootstrap. This allows us to write custom CSS that can overwrite bootstrap, if necessary.
@@ -31,7 +33,9 @@ This is tricky to understand at first. Let's style a basic button element as an 
 ```
 ![IMAGE OF A REGULAR BUTTON](https://s3.amazonaws.com/upperline/curriculum-assets/css/regular-button.png)
 
-Now lets head to the Bootstrap documentation and look at the samples that they have for buttons there:
+Without bootstrap, we'd open up our custom CSS stylesheet, select the button, and change the values of certain properties like background-color and font-size. However, with bootstrap, this has already been done. All we need to do is apply the right class name.
+
+Let's head to the [Bootstrap documentation](http://getbootstrap.com/css/#buttons) and look at the samples that they have for buttons there:
 
 ![BOOTSTRAP DOCUMENTATION](https://s3.amazonaws.com/upperline/curriculum-assets/css/bootstrap-buttons.png)
 
@@ -78,7 +82,19 @@ Here's a 4-4-4 row setup:
   </div>
 </div>
 ```
-[SHOW AN ACTUAL PAGE BROKEN UP SO WE CAN SEE ROWS AND COLUMNS]
+Let's take a look at how rows and columns are used on an actual page:
+
+![Upperline Rows and Columns](http://upperline.s3.amazonaws.com/curriculum-assets/css/rows-and-columns.png)
+
+In the picture above, we see:
+
++ 4 rows
++ Rows 1 and 2 both have one column that is the width of the page (12).
++ Row 3 has four columns (1,5,5,1).
++ Row 4 has four columns (3,3,3,3,)
+
+Notice how the widths of the columns in a row **always add up to 12!**
+
 
 + Using the Documentation
 
