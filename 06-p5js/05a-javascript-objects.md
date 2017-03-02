@@ -1,15 +1,15 @@
 # JavaScript Objects
 
-![bubbles](https://media.giphy.com/media/mUMA3nPwgx0jK/giphy.gif)
+![bubbles](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/monkey-bubbles.gif)
 
 Over the next few readings we'll be making some bubbles that wobble over the screen! If that doesn't excite you on it's own you should definitely get excited about all the learning you will be doing because by then end you will have some really powerful tools in your programmer's tool belt.
 
-![learning](https://media.giphy.com/media/qKltgF7Aw515K/giphy.gif)
+![learning](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/info.gif)
 
 
 ## A First Attempt
 
-![bubbles](/resources/bubbles.gif)
+![bubbles](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/bubbles.gif)
 
 That image shows several bubbles, but let's start with one:
 
@@ -49,7 +49,7 @@ The way we can do this is with **JavaScript Objects**. An object is *one thing* 
 
 That sounds pretty abstract, but it's not so bad, let's make a an object called `brick`:
 
-![first object](/resources/object-intro.gif)
+![first object](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/object-intro.gif)
 
 Nice, the object we created with this code has two properties, `x` and `y`.
 
@@ -86,6 +86,14 @@ var student = {
   grade: 11
 };
 ```
+
+#### \* Your Turn \*
+Make an object that represents you!  You can write it in the text editor, but better would be to open up the chrome console so you can interact with your object.
+
+It should have *at least 5* key-value pairs. Some ideas for the keys might be: name, age, date of birth, grade, favorite food, favorite color, mood, or number of siblings. Some of the vales can also be Boolean values, `true` or `false`, something like`{hasGlasses: true}` or `{tiredToday: false}`.
+
+Read the section below on how to access and change the properties. Change one of the properties on your "me" object.
+
 #### Accessing Properties
 
 We've seen how new objects are created, but we will also need to *access* the values inside of objects. We do this with a dot (a period `.`) after the object name.
@@ -98,7 +106,7 @@ We've seen how new objects are created, but we will also need to *access* the va
 
 You can also use the same *dot* after the object name plus an `=` to add additional properties to an object after it's created or to change existing properties
 
-![adding properties](/resources/add-to-object.gif)
+![adding properties](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/add-to-object.gif)
 
 ## Now with Objects
 
@@ -162,4 +170,4 @@ JavaScript objects are fundamental to how data from the internet is structured a
   The way you would access the `g` key would be `bubble.colors.g`.  Give it a shot!
 
 ## Resources
-- [Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA) The bubble example is copied from here. These videos are awesome!!
+- Watch Dan Shiffman explain the bubbles in a video over at the [Coding Train](https://www.youtube.com/watch?v=pGkSHeEZLMU&index=23&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
