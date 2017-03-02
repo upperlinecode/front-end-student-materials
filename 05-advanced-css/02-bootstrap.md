@@ -2,7 +2,7 @@
 
 As we recently learned, page layout with css can be a long and tedious process. It makes my head hurt. As developers, whenever we encounter situations like this we need to ask ourselves **"Is there an easier way to do this?"**. Developers are lazy.
 
-[LAZY DOG GIF]
+![LAZY DOG GIF](http://upperline.s3.amazonaws.com/curriculum-assets/css/lazydog.gif)
 
 Well, it turns out that Bootstrap (and other front-end frameworks like Foundation) are the answer to our laziness! Bootstrap is a CSS library that makes website layout a breeze. It's used by many of the world's top websites.
 
@@ -82,6 +82,9 @@ Here's a 4-4-4 row setup:
   </div>
 </div>
 ```
+
+Notice that all rows and columns must be in a `<div>` element with the class "container". The container class provides proper width for the layout - it serves as a "wrapper" for the rest of the content.
+
 Let's take a look at how rows and columns are used on an actual page:
 
 ![Upperline Rows and Columns](http://upperline.s3.amazonaws.com/curriculum-assets/css/rows-and-columns.png)
@@ -91,19 +94,46 @@ In the picture above, we see:
 + 4 rows
 + Rows 1 and 2 both have one column that is the width of the page (12).
 + Row 3 has four columns (1,5,5,1).
-+ Row 4 has four columns (3,3,3,3,)
++ Row 4 has four columns (3,3,3,3)
 
 Notice how the widths of the columns in a row **always add up to 12!**
 
+### xs, sm, md, lg
 
-+ Using the Documentation
+If you look at the way we create column divs, the classes look like these:
 
-+ Other Elements
+```
+<!-- Extra Small -->
+<div class="col-xs-6">
 
-+ Using (and modifying) Bootstrap Templates
+<!-- Small -->
+<div class="col-sm-6">
 
-+ Labs
-  + Build a Business Page (Convert a web 1.0 to a web 2.0 page)
-  + Use a bootstrap template
+<!-- Medium -->
+<div class="col-md-6">
 
-+ Resources
+<!-- Large -->
+<div class="col-lg-6">
+```
+
+These sizes tell the browser how to behave when users are using different types of devices. For professionals, the look of a site on an iPhone should be very different from looking at that site on a laptop or desktop monitor. In general, if we want the website to look the same across devices we use the `col-xs` prefix. Look in the resources section to learn more about responsive break-points.
+
+## Using the Documentation
+
+The Bootstrap library is enormous, and the only way to really get into is by tinkering and reading through the documentation. Take some time to click around (especially the "CSS" and "Components" sections) and add different Bootstrap elements to your page!
+
+## Resources
+
++ [SitePoint's Understanding Bootstrap](https://www.sitepoint.com/understanding-bootstrap-grid-system/)
++ [Bootply](http://www.bootply.com/) - A great place to tinker with Bootstrap in a 'drag and drop' environment.
++ Quora: [What's the best way to learn Bootstrap?](https://www.quora.com/What-is-the-best-way-to-learn-Bootstrap)
+
+Here are a few documentation challenges for you:
+
++ Use bootstrap to create a striped table that lists your classes, the name of the teacher, and the amount of work you have for each one every week.
+
++ Create a "Block Level Button" that
+
++ Add a navbar to the top of the page
+
++ Create a sign-up form
