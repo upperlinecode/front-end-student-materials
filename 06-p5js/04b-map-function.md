@@ -37,13 +37,13 @@ The 4th and 5th arguments are the *start* and *end* values of the second range. 
 map(__, 0, 600, 0, 255);
 ```
 
-The first argument is the value we want to map. Here that's `mouseX`.
+The first argument is the value we want to map. Here that's `mouseX` because it's `mouseX` that is changing in the range of `0` to `600`.
 
 ```javascript
 map(mouseX, 0, 600, 0, 255);
 ```
 
-Awesome, store this in a variable and that's it!
+Awesome, store the result of this in a variable and that's it!
 
 ```javascript
 function setup() {
@@ -130,7 +130,7 @@ And here is *that* code with the values of the color ranges reversed
 
 #### Expert Challenge
 
-Alter the above code to make a realistic looking sunset. Things I would think about: maybe the size of the "sun" shouldn't shrink all the way to `0` and it's `x` and `y` coordinates can slowly move below a horizon line, maybe none of the ranges should map all the way to or from `0`, maybe the color of the sky could be mapped to change along with the color of the sun.
+Alter the above code to make a realistic looking sunrise or sunset. Things I would think about: maybe the size of the "sun" shouldn't shrink all the way to `0` and it's `x` and `y` coordinates can slowly move below or above a horizon line, maybe none of the ranges should map all the way to or from `0`, maybe the color of the sky could be mapped to change along with the color of the sun.
 
 ## Resources
 
