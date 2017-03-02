@@ -127,13 +127,3 @@ The Bootstrap library is enormous, and the only way to really get into is by tin
 + [SitePoint's Understanding Bootstrap](https://www.sitepoint.com/understanding-bootstrap-grid-system/)
 + [Bootply](http://www.bootply.com/) - A great place to tinker with Bootstrap in a 'drag and drop' environment.
 + Quora: [What's the best way to learn Bootstrap?](https://www.quora.com/What-is-the-best-way-to-learn-Bootstrap)
-
-Here are a few documentation challenges for you:
-
-+ Use bootstrap to create a striped table that lists your classes, the name of the teacher, and the amount of work you have for each one every week.
-
-+ Create a "Block Level Button" that
-
-+ Add a navbar to the top of the page
-
-+ Create a sign-up form
