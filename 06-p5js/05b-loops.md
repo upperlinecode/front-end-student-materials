@@ -1,6 +1,6 @@
 # Loops
 
-![looping](https://media.giphy.com/media/gYaG5BzJbzAly/giphy.gif)
+![looping](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/loop.gif)
 
 For the moment, let's set aside getting our bubbles to move and just focus on drawing ellipses on the screen.
 
@@ -19,11 +19,11 @@ function draw() {
 }
 ```
 
-![one ellipse](/resources/one-ellipse.png)
+![one ellipse](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/one-ellipse.png)
 
 Great, now let's add a few more bubbles to the right.
 
-![copying and pasting](/resources/copy-paste.gif)
+![copying and pasting](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/copy-paste.gif)
 
 That works, but it's so repetitive. Notice the same code is copied and pasted over and over again. There must be a better way, doing things over and over again is actually exactly what computers are great at. Think about `draw`, it's called over and over.
 
@@ -51,15 +51,15 @@ That's called a **while loop**.
 
 Delete all the repeated code
 
-![deleting repetition](/resources/delete.gif)
+![deleting repetition](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/delete.gif)
 
 Add in the while loop
 
-![inifnite loop](/resources/crash.gif)
+![inifnite loop](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/crash.gif)
 
 and..
 
-![crash](https://media.giphy.com/media/nv99yd56AMNDa/giphy.gif)
+![crash](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/comp-crash.gif)
 
 That froze up my whole computer. What's going on??
 
@@ -67,7 +67,7 @@ The computer was stuck in an **infinite loop**. While `true` was `true` (a.k.a *
 
 Let's fix this by adding a condition that will not be `true` forever. Like 'as long as `x` is less than the width of the canvas':
 
-![while loop](/resources/while-loop.gif)
+![while loop](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/while-loop.gif)
 
 Cool!
 
@@ -81,7 +81,7 @@ How are we going to keep track of the count of ellipses? With a variable of cour
 
 Make variable `count` that will start at `0` and grow bigger by one every time the loop runs
 
-![3 bubbles](/resources/3-bubbles.gif)
+![3 bubbles](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/3-bubbles.gif)
 
 ```javascript
 function draw() {
@@ -214,6 +214,34 @@ function draw() {
 }
 ```
 
-## Mini-Challenge
+## Mini-Challenges
 
-(TODO add loop mini challenges)
+1.  Use either a `while` loop or a `for` loop to make a target of concentric rings. Start with the colors randomized.
+
+ ![target](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/target.gif)
+
+ Can you make the rings alternate color? Gradually change color toward the center?
+
+2. Use either a `while` loop or a `for` loop to build a random city sky line. Here's some of the randomized cities my code builds.
+
+ ![city skyline](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/city-skyline.gif)
+
+ What would it take to draw a random number of windows on each building?
+
+3. Use a `for` loop to draw a chessboard. A standard chessboard has 8 * 8 squares (64 total squares).  
+
+ This problem is surprisingly tricky, so let's break it down into several parts. For step 1, let's only worry about the first row of squares. Also, for the moment let's not be concerned about the alternating black and white colors.  In your loop count from 0 up to 8 and draw a square each time incrementing the `x` coordinate.
+
+ ![one-row](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/one-row.png)
+
+ Ok, now the colors need to alternate. To do this initialize a boolean variable outside of the loop. If it's `true` draw a black square, if it's `false` draw a white square. *Inside the loop* flip the boolean value so the next time it's the opposite color. Something like `blk = !blk` would work ;)
+
+ ![one-row-alternate](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/one-row-alternate.png)
+
+ Great, now we want to count from 0 up to 64. If your `x` value gets too big, that means you are at the end of a row. Reset `x` to 0 and increment the `y` value to start on the next row down. Otherwise just increment the `x` value like you did before.
+
+ You'll need to play around with where exactly in that conditional you say to switch the color to achieve the alternating square effect of the chessboard.
+
+ ![full-board](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/full-board.png)
+
+ There is an alternate approach to this problem that would use *a loop inside of a loop*. This is a little tricky conceptually but is a common approach when you have a grid structure like this.  If you are up for a challenge, try to refactor the code using two loops.
