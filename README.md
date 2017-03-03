@@ -11,10 +11,6 @@
 
 5. [CSS](04-css/01-intro-to-css.md)
 
-6. Advanced CSS
+6. [Advanced CSS](05-advanced-css/01-box-model.md)
 
-7. P5.js
-
-8. Javascript
-
-9. JQuery
+7. [P5.js & Javascript](06-p5js/01a-what-is-p5js.md)
