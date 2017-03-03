@@ -1,4 +1,4 @@
-# Initital setup
+# Initial setup
 
 ### Let's dive right in
 ![dive](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/dive.gif)
