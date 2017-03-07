@@ -194,6 +194,10 @@ In a field where new technologies are always coming out and existing ones consta
   - Some ideas:
   - Try a brand new function such as `quad` or `triangle`.
   - Look at the documentation of `rect` to see how to make a rectangle with rounded edges
+  
+4. Can you Build the Olympic Rings in Code?
+
+![Olympic Rings](http://images.all-free-download.com/images/graphiclarge/olympic_rings_icon_clip_art_24458.jpg)
 
 ## Resources
 - [p5.js Documentation](https://p5js.org/reference/)
