@@ -199,9 +199,6 @@ In a field where new technologies are always coming out and existing ones consta
 
 ![Olympic Rings](http://images.all-free-download.com/images/graphiclarge/olympic_rings_icon_clip_art_24458.jpg)
 
-5. Logo Design. Below are a number of famous shapes from popular brands. How many can you identify? How many can you replicate using p5.js?
-
-![logos](http://conversations.marketing-partners.com/wp-content/uploads/2013/04/famous_shapes.jpg)
 
 ## Resources
 - [p5.js Documentation](https://p5js.org/reference/)
