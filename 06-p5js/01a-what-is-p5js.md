@@ -36,8 +36,8 @@ temperature you desire.
 p5.js is a code **library**. A library is just a bunch of code someone else
 wrote that we get to use. p5.js is written in the **JavaScript** programming language-- that's what
 the `.js` stands for. When you're working on your p5.js projects you will be writing
-programs with JavaScript. You've probably heard the term **program** before,
-it means, simply, a collection of code that is meant to be run by a computer to perform
+programs with JavaScript. You've probably heard the term **program** before.
+It simply means, a collection of code that is meant to be run by a computer to perform
 a specific task.
 
 You'll be writing your first program very soon!
@@ -69,7 +69,7 @@ games or works of art, and you'll be able to share your programs with your frien
 on the internet!
 
 
-Here are examples of some projects built with p5.js
+Here are some examples of projects built with p5.js
 
 ![example1](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example1.gif)
 
