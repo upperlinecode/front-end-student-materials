@@ -108,3 +108,8 @@ You could expand upon this idea by making yourself walk around in a room like a 
 Find or take a picture of an empty room and use the arrow keys to make your character move around the screen.
 
 As a bonus, use multiple images of yourself facing in different directions.
+
+## Resources
+
+- [`image` Documentation](https://p5js.org/reference/#/p5/image)
+- [Coding Train Images](https://www.youtube.com/watch?v=FVYGyaxG4To&index=31&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
