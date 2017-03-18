@@ -37,7 +37,7 @@ p5.js is a code **library**. A library is just a bunch of code someone else
 wrote that we get to use. p5.js is written in the **JavaScript** programming language-- that's what
 the `.js` stands for. When you're working on your p5.js projects you will be writing
 programs with JavaScript. You've probably heard the term **program** before.
-It simply means, a collection of code that is meant to be run by a computer to perform
+It simply means a collection of code that is meant to be run by a computer to perform
 a specific task.
 
 You'll be writing your first program very soon!
