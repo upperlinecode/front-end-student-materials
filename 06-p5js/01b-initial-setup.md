@@ -7,7 +7,7 @@ Create a new project in cloud9.  In cloud 9's terminal use the `mkdir` (short fo
 
 ![mkdir](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/mkdir.gif)
 
-When you need to make another project you can use `mkdir` again to make another folder. You can copy the two files we'll make here and place into any new project.
+When you need to make another project you can use `mkdir` again to make another folder. You can copy the two files we'll make here and place them into any new project.
 
 Paste this code for an empty html document into `index.html`
 
@@ -35,8 +35,8 @@ Try visiting `https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js` in your 
 Wow so much code! That's the p5.js library. What you have to do is tell your html file to
 go that address and get all that code. You do this with a `script` tag.
 
-JavaScript code can actually be written directly inside of a `script` tag, but since here
-the code we want to use lives elsewhere, at that web address, you can use the `src` property of a `script` tag.
+JavaScript code can actually be written directly inside of a `script` tag, but since
+the code we want to use lives elsewhere- at that web address- you can use the `src` property of a `script` tag.
 
 Paste this into the `head` tag in your `index.html` file:
 
@@ -49,9 +49,9 @@ Paste this into the `head` tag in your `index.html` file:
 Great! Now when you write JavaScript you will have access to the full p5.js library. What's missing
 is a place for you to write all your code.
 
-Make a new file in the root directory of your project called `sketch.js`.
+That's where the file called `sketch.js` you created in the root directory of your project comes in. 
 
-Now you need to let your html know about that file the same we we let it know about
+First, you need to let your html know about that file the same way we let it know about
 the p5 library-- with a `script` tag. The `src`, or source, that a script tag
 retrieves code from can be either a web address or another file you have locally in your project.
 
@@ -62,7 +62,7 @@ Paste this inside the `head` as well:
 ```
 ![paste the next script tag](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/setup2.gif)
 
-To test that everything works paste this code into your empty `sketch.js` file.
+To test that everything works, paste this code into your empty `sketch.js` file.
 
 ```javascript
 function setup() {
@@ -74,11 +74,11 @@ function draw() {
 }
 ```
 
-If you see an circle on the screen when you preview your `index.html` you're good to go.
+If you see a circle on the screen when you preview your `index.html` you're good to go.
 
 ![our first program](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/setup3.gif)
 
-In the next lesson we can explore more what that code you just wrote is doing. Good work 👍
+In the next lesson, we will explore more what that code you just wrote is doing. Good work 👍
 
 ## Resources
 
