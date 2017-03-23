@@ -41,7 +41,7 @@ the code we want to use lives elsewhere- at that web address- you can use the `s
 Paste this into the `head` tag in your `index.html` file:
 
 ```html
-<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
 ```
 
 ![paste the script tag](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/setup1.gif)
