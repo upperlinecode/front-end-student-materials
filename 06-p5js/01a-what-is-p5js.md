@@ -68,29 +68,6 @@ By combining different pieces of code that do these things you can build up prog
 games or works of art, and you'll be able to share your programs with your friends and family
 on the internet!
 
-
-Here are some examples of projects built with p5.js
-
-![example1](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example1.gif)
-
-![example2](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example2.gif)
-
-![example3](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example3.gif)
-
-![example4](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example4.gif)
-
-![example5](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example5.gif)
-
-![example6](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example6.gif)
-
-![example7](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example7.gif)
-
-![example8](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example8.gif)
-
-![example9](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example9.gif)
-
-![example10](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/example10.gif)
-
 We are going to start by drawing some shapes on the screen! Doing this will require just
 a little bit of setup. Since we'll use the p5.js library in a web browser, we'll have to
 look at a little HTML. Luckily, that should be no big deal to all of you :)
